@@ -6,6 +6,7 @@ gem 'rails', '4.0.0'
 gem 'pg'
 gem 'unicorn'
 gem 'cancan'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :doc do
   gem 'sdoc', require: false
@@ -20,6 +21,7 @@ end
 
 group :test do
   gem 'shoulda'
+  gem 'factory_girl'
 end
 
 group :production do
