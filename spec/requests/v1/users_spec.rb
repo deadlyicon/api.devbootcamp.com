@@ -11,14 +11,22 @@ describe '/v1/users' do
 
   describe 'POST /v1/users' do
     it "should create a user" do
-      attributes = attributes_for('dbc/user')
+      user = build('dbc/user', admin: true, student: true)
+      attributes = {
+        "name"                  => user.name,
+        "email"                 => user.email,
+        "password"              => user.password,
+        "password_confirmation" => user.password_confirmation,
+        "roles"                 => user.roles,
+        "github_token"          => user.github_token,
+      }
       post '/v1/users', user: attributes
       expect( response.json.keys.to_set     ).to eq %w{id name email roles github_token created_at updated_at}.to_set
       expect( response.json["id"]           ).to be_present
-      expect( response.json["name"]         ).to eq attributes[:name]
-      expect( response.json["email"]        ).to eq attributes[:email]
-      expect( response.json["roles"]        ).to eq attributes[:roles].join(' ')
-      expect( response.json["github_token"] ).to eq attributes[:github_token]
+      expect( response.json["name"]         ).to eq attributes['name']
+      expect( response.json["email"]        ).to eq attributes['email']
+      expect( response.json["roles"]        ).to eq attributes['roles']
+      expect( response.json["github_token"] ).to eq attributes['github_token']
       expect( response.json["created_at"]   ).to be_present
       expect( response.json["updated_at"]   ).to be_present
     end

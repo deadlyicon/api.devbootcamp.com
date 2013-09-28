@@ -7,7 +7,7 @@ describe Dbc::Users do
   let(:user_as_json){ Dbc::User::Serializer.new(dbc).call user }
 
   def serialize user
-    serializer.call user
+    serializer.serialize user
   end
 
   describe "all" do

@@ -44,8 +44,6 @@ class Dbc::Users
     serialize user
   end
 
-  private
-
   def sanatize_attributes(attributes)
     attributes.to_hash.symbolize_keys!.slice! *MUTABLE_ATTRIBUTES
   end
@@ -58,7 +56,7 @@ class Dbc::Users
     if user_or_users.respond_to? :map
       user_or_users.map(&serializer)
     else
-      serializer.call(user_or_users)
+      serializer.serialize(user_or_users)
     end
   end
 

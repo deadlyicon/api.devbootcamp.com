@@ -6,7 +6,6 @@ FixtureBuilder.build do
   create 'dbc/user', admin: true, name: 'Jared Grippe',    email: 'jared@devbootcamp.com'
   create 'dbc/user', admin: true, name: 'Sherif Abushadi', email: 'sherif@devbootcamp.com'
 
-
   beginning_of_week = Date.today.beginning_of_week
 
   5.times do |i|
@@ -21,6 +20,6 @@ FixtureBuilder.build do
     25.times{ create 'dbc/user', student: true, cohort: cohort }
   end
 
-  binding.pry
+  # binding.pry
 
 end

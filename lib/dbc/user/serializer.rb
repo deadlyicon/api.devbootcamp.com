@@ -1,14 +1,6 @@
-class Dbc::User::Serializer
+class Dbc::User::Serializer < Dbc::Serializer
 
-  def initialize dbc
-    @dbc = dbc
-  end
-
-  def to_proc
-    method(:call).to_proc
-  end
-
-  def call user
+  def serialize user
 
     # Permissions will go in here
 
@@ -16,7 +8,7 @@ class Dbc::User::Serializer
       "id"           => user.id,
       "name"         => user.name,
       "email"        => user.email,
-      "roles"        => user.roles.join(' '),
+      "roles"        => user.roles,
       "github_token" => user.github_token,
       "created_at"   => user.created_at,
       "updated_at"   => user.updated_at,
