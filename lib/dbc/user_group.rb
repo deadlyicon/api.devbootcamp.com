@@ -3,9 +3,9 @@ class Dbc::UserGroup < ActiveRecord::Base
   has_many :challenge_attempts
   has_and_belongs_to_many :users
 
-  def self.for users
-    record = joins(:users).where(users:{id:users}).first
-    record ? record : create!(users: users)
+  def self.for user_ids
+    record = joins(:users).where(users:{id:user_ids}).first
+    record ? record : create!(user_ids: user_ids)
   end
 
   # scope :for_user_ids, -> (user_ids) do

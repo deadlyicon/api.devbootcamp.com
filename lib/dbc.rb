@@ -12,8 +12,12 @@ class Dbc
     @users ||= Users.new(self)
   end
 
+  def current_user_group
+    @current_user_group ||= UserGroup.for(@current_user_ids)
+  end
+
   def current_users
-    @current_users ||= User.where(:id => @current_user_ids).to_a
+    current_user_group.users
   end
 
   class ValidationError < StandardError

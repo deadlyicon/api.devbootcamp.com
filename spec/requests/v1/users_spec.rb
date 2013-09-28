@@ -104,7 +104,7 @@ describe '/v1/users' do
 
         # expect(response).to_not be_success
 
-        # binding.pry
+        binding.pry
 
       end
     end
