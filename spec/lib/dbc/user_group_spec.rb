@@ -15,16 +15,21 @@ describe Dbc::UserGroup do
       end
     end
 
-    it "description" do
+    it "it should create uniq user groups" do
       user1, user2, user3, user4 = Dbc::User.first(4)
 
       group1 = Dbc::UserGroup.for [user1,user2,user3]
-      group2 = Dbc::UserGroup.for [user2,user3,user3]
+      group2 = Dbc::UserGroup.for [user2,user3,user4]
 
       expect(group1).to_not eq group2
 
-      # binding.pry
+      expect(group1.users).to eq [user1,user2,user3]
+      expect(group2.users).to eq [user2,user3,user4]
+    end
 
+    it "should return nil when the user ids are invalid" do
+      expect{ Dbc::UserGroup.for([])        }.to raise_error(Dbc::UserGroup::Invalid, 'a user group must have at least 1 user')
+      expect{ Dbc::UserGroup.for([9999999]) }.to raise_error(Dbc::UserGroup::Invalid, 'Couldn\'t find Dbc::User with id=9999999')
     end
   end
 

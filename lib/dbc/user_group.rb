@@ -1,20 +1,24 @@
 class Dbc::UserGroup < ActiveRecord::Base
 
+  class Invalid < StandardError
+  end
+
   has_many :challenge_attempts
   has_and_belongs_to_many :users
 
-  validates_length_of :user_ids, minimum: 1
-  validates_presence_of :users_count
+  validates_presence_of :user_ids
 
-  before_validation :count_users
+  before_validation :serialize_user_ids
 
   def self.for user_ids
-    return nil if user_ids.blank?
-    user_ids = user_ids.map do |user_id|
-      user_id.respond_to?(:id) ? user_id.id : user_id
-    end
-    record = joins(:users).where(users:{id:user_ids}).first
+    user_ids = Array(user_ids).map do |user_id|
+      user_id.respond_to?(:id) ? user_id.id : user_id.to_i
+    end.uniq
+    raise Invalid, 'a user group must have at least 1 user' if user_ids.empty?
+    record = where(:user_ids => user_ids.sort.join(',')).first
     record ? record : create!(user_ids: user_ids)
+  rescue ActiveRecord::RecordNotFound
+    raise Invalid, $!.message
   end
 
   def roles
@@ -36,5 +40,11 @@ class Dbc::UserGroup < ActiveRecord::Base
   end
 
   delegate :can?, :cannot?, to: :ability
+
+  private
+
+  def serialize_user_ids
+    write_attribute :user_ids, user_ids.sort.join(',')
+  end
 
 end
