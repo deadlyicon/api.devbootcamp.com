@@ -5,6 +5,7 @@ FactoryGirl.define do
     email                 {|user| "#{user.name.gsub(/\s+/,'_')}@example.com"}
     password              { 'password' }
     password_confirmation { 'password' }
+    roles                 { ['student'] }
 
   end
 end

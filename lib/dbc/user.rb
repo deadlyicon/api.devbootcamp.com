@@ -13,3 +13,5 @@ class Dbc::User < ActiveRecord::Base
   # validates :cohort_id, presence: true, if: ->{ student? }
 
 end
+
+require 'dbc/user/serializer'

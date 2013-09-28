@@ -1,5 +1,14 @@
 class Dbc::Users
 
+  MUTABLE_ATTRIBUTES = [
+    :name,
+    :email,
+    :password,
+    :password_confirmation,
+    :roles,
+    :github_token,
+  ]
+
   def initialize dbc
     @dbc = dbc
   end
@@ -9,10 +18,12 @@ class Dbc::Users
   end
 
   def create attributes={}
+    sanatize_attributes(attributes)
     serialize Dbc::User.create!(attributes)
   end
 
   def new attributes={}
+    sanatize_attributes(attributes)
     serialize Dbc::User.new(attributes)
   end
 
@@ -21,6 +32,7 @@ class Dbc::Users
   end
 
   def update id, attributes={}
+    sanatize_attributes(attributes)
     user = Dbc::User.find(id)
     user.update_attributes(attributes)
     serialize user
@@ -34,11 +46,20 @@ class Dbc::Users
 
   private
 
-  def serialize x
-    x.as_json
-    # Dbc::User::Serializer[users]
-
+  def sanatize_attributes(attributes)
+    attributes.to_hash.symbolize_keys!.slice! *MUTABLE_ATTRIBUTES
   end
 
+  def serializer
+    @serializer ||= Dbc::User::Serializer.new(@dbc)
+  end
+
+  def serialize user_or_users
+    if user_or_users.respond_to? :map
+      user_or_users.map(&serializer)
+    else
+      serializer.call(user_or_users)
+    end
+  end
 
 end

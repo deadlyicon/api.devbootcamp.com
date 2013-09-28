@@ -26,6 +26,10 @@ module Dbc::User::Roles
     scope :in_cohort, ->(cohort_id) { where(:cohort_id => cohort_id) }
   end
 
+  def roles_mask
+    read_attribute(:roles_mask) || 0
+  end
+
   def roles
     ROLES.reject do |role|
       (roles_mask & role_to_mask(role)).zero?
