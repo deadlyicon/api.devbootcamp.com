@@ -12,6 +12,7 @@ describe '/v1/users' do
   describe 'POST /v1/users' do
     it "should create a user" do
       user = build('dbc/user', admin: true, student: true)
+
       attributes = {
         "name"                  => user.name.as_json,
         "email"                 => user.email.as_json,
@@ -20,7 +21,12 @@ describe '/v1/users' do
         "roles"                 => user.roles.as_json,
         "github_token"          => user.github_token.as_json,
       }
-      expect{ post '/v1/users', user: attributes }.to change{ Dbc::User.count }.by(1)
+
+      expect{
+        post '/v1/users', user: attributes
+        expect(response).to be_success
+      }.to change{ Dbc::User.count }.by(1)
+
       expect( response.json.keys.to_set     ).to eq %w{id name email roles github_token created_at updated_at}.to_set
       expect( response.json["id"]           ).to be_present
       expect( response.json["name"]         ).to eq attributes['name']
@@ -64,6 +70,8 @@ describe '/v1/users' do
 
       put "v1/users/#{user.id}", "user" => updates
 
+      expect(response).to be_success
+
       user.reload
 
       expect(response.json).to eq(
@@ -82,6 +90,23 @@ describe '/v1/users' do
       expect( user.github_token ).to eq updates["github_token"].as_json
 
       expect( user.authenticate(updates["password"]) ).to_not be_false
+    end
+
+    context "when the passwords do not match" do
+      it "it should fail" do
+
+        updates = {
+          "password"              => "3x@#32wDS#3",
+          "password_confirmation" => "455^$dsa@@33",
+        }
+
+        put "v1/users/#{user.id}", "user" => updates
+
+        # expect(response).to_not be_success
+
+        # binding.pry
+
+      end
     end
   end
 

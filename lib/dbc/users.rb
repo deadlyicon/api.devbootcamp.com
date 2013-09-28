@@ -9,6 +9,13 @@ class Dbc::Users
     :github_token,
   ]
 
+  class Error < StandardError
+    def initialize(user)
+      @user = user
+    end
+    attr_reader :user
+  end
+
   def initialize dbc
     @dbc = dbc
   end
@@ -19,7 +26,10 @@ class Dbc::Users
 
   def create attributes={}
     sanatize_attributes(attributes)
-    serialize Dbc::User.create!(attributes)
+    user = Dbc::User.create(attributes)
+    serialize user
+    # return serialized_user if user.persisted?
+    # raise Error.new(serialized_user)
   end
 
   def show id

@@ -46,10 +46,6 @@ ActiveRecord::Schema.define(version: 0) do
   add_index "locations", ["name"], name: "index_locations_on_name", unique: true, using: :btree
 
   create_table "user_groups", force: true do |t|
-    t.string   "name",        null: false
-    t.integer  "users_count", null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
   end
 
   create_table "user_groups_users", force: true do |t|

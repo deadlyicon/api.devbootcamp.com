@@ -16,4 +16,18 @@ class Dbc
     @current_users ||= User.where(:id => @current_user_ids).to_a
   end
 
+  class ValidationError < StandardError
+    def initialize(record)
+      @record = record
+    end
+    attr_reader :record
+  end
+
+  class PermissionsError < StandardError
+    def initialize(user_group)
+      @record = record
+    end
+    attr_reader :record
+  end
+
 end

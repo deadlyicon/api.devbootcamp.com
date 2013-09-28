@@ -4,7 +4,7 @@ class Dbc::User::Serializer < Dbc::Serializer
 
     # Permissions will go in here
 
-    return {
+    data = {
       "id"           => user.id,
       "name"         => user.name,
       "email"        => user.email,
@@ -13,6 +13,10 @@ class Dbc::User::Serializer < Dbc::Serializer
       "created_at"   => user.created_at,
       "updated_at"   => user.updated_at,
     }
+
+    data["errors"] = user.errors.as_json.stringify_keys if user.errors.present?
+
+    return data
 
   end
 
