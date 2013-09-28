@@ -104,7 +104,7 @@ describe '/v1/users' do
 
         expect(response).to_not be_success
 
-        # binding.pry
+        expect(response.json["errors"]).to eq("password_confirmation"=>["doesn't match Password"])
 
       end
     end
