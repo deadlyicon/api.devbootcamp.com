@@ -8,9 +8,8 @@ describe Dbc::Ability do
 
   ROLES.each do |role|
     let(role){
-      user = Dbc::User.new(roles: [role]) if role
-      user_group = Dbc::UserGroup.new(users: [user])
-      user_group.ability
+      user = create_user_with_roles role
+      Dbc::UserGroup.new(users: [user])
     }
   end
 
@@ -18,27 +17,43 @@ describe Dbc::Ability do
 
     # binding.pry
 
-    assert student, :cannot, :create,  Dbc::User
-    assert student, :can,    :read,    Dbc::User
-    assert student, :cannot, :update,  Dbc::User
-    assert student, :cannot, :destroy, Dbc::User
-    assert editor,  :cannot, :create,  Dbc::User
-    assert editor,  :can,    :read,    Dbc::User
-    assert editor,  :cannot, :update,  Dbc::User
-    assert editor,  :cannot, :destroy, Dbc::User
-    assert admin,   :can,    :create,  Dbc::User
-    assert admin,   :can,    :read,    Dbc::User
-    assert admin,   :can,    :update,  Dbc::User
+    student .cannot! :create,  Dbc::User
+    student .can!    :read,    Dbc::User
+    student .cannot! :update,  Dbc::User
+    student .cannot! :destroy, Dbc::User
+    editor  .cannot! :create,  Dbc::User
+    editor  .can!    :read,    Dbc::User
+    editor  .cannot! :update,  Dbc::User
+    editor  .cannot! :destroy, Dbc::User
+    admin   .can!    :create,  Dbc::User
+    admin   .can!    :read,    Dbc::User
+    admin   .can!    :update,  Dbc::User
+
+    as_a :student do
+      dbc.cannot! :create,  Dbc::User
+      dbc.can!    :read,    Dbc::User
+      dbc.cannot! :update,  Dbc::User
+      dbc.cannot! :destroy, Dbc::User
+    end
+
+    as_a :editor do
+      dbc.cannot! :create,  Dbc::User
+      dbc.can!    :read,    Dbc::User
+      dbc.cannot! :update,  Dbc::User
+      dbc.cannot! :destroy, Dbc::User
+    end
+
+    as_an :admin do
+      dbc.can!    :create,  Dbc::User
+      dbc.can!    :read,    Dbc::User
+      dbc.can!    :update,  Dbc::User
+      dbc.can!    :destroy, Dbc::User
+    end
 
 
     # user = Dbc::User.student
 
   end
 
-  def assert user_group, can, ability, object
-    return if user_group.send("#{can}?", ability, object)
-    raise RSpec::Expectations::ExpectationNotMetError, \
-      "expected #{role} to be able to #{ability} #{Class === object ? object.name : object.inspect}"
-  end
 
 end

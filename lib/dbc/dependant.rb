@@ -4,6 +4,6 @@ module Dbc::Dependant
     @dbc = dbc
   end
 
-  delegate :current_users, to: :@dbc
+  delegate :can?, :cannot?, :can!, :cannot!, to: :@dbc
 
 end

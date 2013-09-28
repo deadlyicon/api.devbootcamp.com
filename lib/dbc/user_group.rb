@@ -10,8 +10,8 @@ class Dbc::UserGroup < ActiveRecord::Base
 
   before_validation :serialize_user_ids
 
-  def self.for user_ids
-    user_ids = Array(user_ids).flatten.map do |user_id|
+  def self.for *user_ids
+    user_ids = user_ids.flatten.map do |user_id|
       user_id.respond_to?(:id) ? user_id.id : user_id.to_i
     end.uniq
     raise Invalid, 'a user group must have at least 1 user' if user_ids.empty?
@@ -35,13 +35,23 @@ class Dbc::UserGroup < ActiveRecord::Base
     end
   end
 
+  delegate :can?, :cannot?, to: :ability
+
+  def can!(action, subject, *extra_args)
+    return if can? action, subject, *extra_args
+    raise Dbc::PermissionsError
+  end
+
+  def cannot!(action, subject, *extra_args)
+    return if cannot? action, subject, *extra_args
+    raise Dbc::PermissionsError
+  end
+
+  private
+
   def ability
     @ability ||= Dbc::Ability.new self
   end
-
-  delegate :can?, :cannot?, to: :ability
-
-  private
 
   def serialize_user_ids
     write_attribute :user_ids, user_ids.sort.join(',')

@@ -2,10 +2,7 @@ require 'spec_helper'
 
 describe Dbc do
 
-  let(:current_users){ Dbc::User.first(3) }
-
-  let(:dbc){ Dbc.new as: current_users.map(&:id) }
-
+  before{ become :admin }
 
   describe "#current_user_group" do
     it "should return an instance of Dbc::Users" do
