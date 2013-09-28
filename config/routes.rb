@@ -1,6 +1,6 @@
 ApiDevbootcampCom::Application.routes.draw do
 
-  namespace :v1 do
+  namespace :v1, defaults: {format: :json}, except: [:new, :edit] do
 
     resources :users do
       resources :challenge_attempts

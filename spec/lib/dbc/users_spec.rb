@@ -23,12 +23,6 @@ describe Dbc::Users do
     end
   end
 
-  describe "new" do
-    it "should return a new user as json" do
-      expect(dbc.users.new).to eq serialize(Dbc::User.new)
-    end
-  end
-
   describe "show" do
     it "should return all the users as json" do
       expect(dbc.users.show(user.id)).to eq serialize(user)

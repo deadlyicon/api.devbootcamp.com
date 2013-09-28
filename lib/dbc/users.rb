@@ -22,11 +22,6 @@ class Dbc::Users
     serialize Dbc::User.create!(attributes)
   end
 
-  def new attributes={}
-    sanatize_attributes(attributes)
-    serialize Dbc::User.new(attributes)
-  end
-
   def show id
     serialize Dbc::User.find(id)
   end

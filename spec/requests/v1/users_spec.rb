@@ -13,14 +13,14 @@ describe '/v1/users' do
     it "should create a user" do
       user = build('dbc/user', admin: true, student: true)
       attributes = {
-        "name"                  => user.name,
-        "email"                 => user.email,
-        "password"              => user.password,
-        "password_confirmation" => user.password_confirmation,
-        "roles"                 => user.roles,
-        "github_token"          => user.github_token,
+        "name"                  => user.name.as_json,
+        "email"                 => user.email.as_json,
+        "password"              => user.password.as_json,
+        "password_confirmation" => user.password_confirmation.as_json,
+        "roles"                 => user.roles.as_json,
+        "github_token"          => user.github_token.as_json,
       }
-      post '/v1/users', user: attributes
+      expect{ post '/v1/users', user: attributes }.to change{ Dbc::User.count }.by(1)
       expect( response.json.keys.to_set     ).to eq %w{id name email roles github_token created_at updated_at}.to_set
       expect( response.json["id"]           ).to be_present
       expect( response.json["name"]         ).to eq attributes['name']
@@ -32,14 +32,29 @@ describe '/v1/users' do
     end
   end
 
+  describe "GET /v1/users/:id" do
+    let(:user){ Dbc::User.last }
+    it "should return that user as json" do
+      get "v1/users/#{user.id}"
+
+      expect(response.json).to eq(
+        "id" => user.id,
+        "name"         => user.name.as_json,
+        "email"        => user.email.as_json,
+        "roles"        => user.roles.as_json,
+        "github_token" => user.github_token.as_json,
+        "created_at"   => user.created_at.as_json,
+        "updated_at"   => user.updated_at.as_json,
+      )
+
+    end
+  end
+
 end
 
-
-#     v1_users GET    /v1/users(.:format)                                      v1/users#index
-#              POST   /v1/users(.:format)                                      v1/users#create
-#  new_v1_user GET    /v1/users/new(.:format)                                  v1/users#new
-# edit_v1_user GET    /v1/users/:id/edit(.:format)                             v1/users#edit
-#      v1_user GET    /v1/users/:id(.:format)                                  v1/users#show
-#              PATCH  /v1/users/:id(.:format)                                  v1/users#update
-#              PUT    /v1/users/:id(.:format)                                  v1/users#update
-#              DELETE /v1/users/:id(.:format)                                  v1/users#destroy
+  # v1_users GET    /v1/users(.:format)                                 v1/users#index {:format=>:json}
+  #          POST   /v1/users(.:format)                                 v1/users#create {:format=>:json}
+  #  v1_user GET    /v1/users/:id(.:format)                             v1/users#show {:format=>:json}
+  #          PATCH  /v1/users/:id(.:format)                             v1/users#update {:format=>:json}
+  #          PUT    /v1/users/:id(.:format)                             v1/users#update {:format=>:json}
+  #          DELETE /v1/users/:id(.:format)                             v1/users#destroy {:format=>:json}

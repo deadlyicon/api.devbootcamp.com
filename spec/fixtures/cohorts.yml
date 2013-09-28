@@ -1,8 +1,8 @@
 ---
 cohorts_000:
-  id: '68'
+  id: '113'
   name: cohort 1
-  location_id: '31'
+  location_id: '49'
   created_at: '2013-08-12 00:00:00'
   updated_at: '2013-08-12 00:00:00'
   in_session: f
@@ -11,9 +11,9 @@ cohorts_000:
   visible: t
   slug: cohort_1
 cohorts_001:
-  id: '69'
+  id: '114'
   name: cohort 2
-  location_id: '31'
+  location_id: '49'
   created_at: '2013-07-22 00:00:00'
   updated_at: '2013-07-22 00:00:00'
   in_session: f
@@ -22,9 +22,9 @@ cohorts_001:
   visible: t
   slug: cohort_2
 cohorts_002:
-  id: '70'
+  id: '115'
   name: cohort 3
-  location_id: '31'
+  location_id: '49'
   created_at: '2013-07-01 00:00:00'
   updated_at: '2013-07-01 00:00:00'
   in_session: f
@@ -33,9 +33,9 @@ cohorts_002:
   visible: t
   slug: cohort_3
 cohorts_003:
-  id: '71'
+  id: '116'
   name: cohort 4
-  location_id: '31'
+  location_id: '49'
   created_at: '2013-06-10 00:00:00'
   updated_at: '2013-06-10 00:00:00'
   in_session: f
@@ -44,9 +44,9 @@ cohorts_003:
   visible: t
   slug: cohort_4
 cohorts_004:
-  id: '72'
+  id: '117'
   name: cohort 5
-  location_id: '31'
+  location_id: '49'
   created_at: '2013-05-20 00:00:00'
   updated_at: '2013-05-20 00:00:00'
   in_session: f

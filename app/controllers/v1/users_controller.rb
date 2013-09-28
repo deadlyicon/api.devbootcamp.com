@@ -9,14 +9,6 @@ class V1::UsersController < ApplicationController
     render json: user, location: v1_user_url(user["id"])
   end
 
-  def new
-    render json: dbc.users.new
-  end
-
-  def edit
-    render json: dbc.users.show(user_id)
-  end
-
   def show
     render json: dbc.users.show(user_id)
   end
