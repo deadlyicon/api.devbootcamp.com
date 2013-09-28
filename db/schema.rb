@@ -39,6 +39,12 @@ ActiveRecord::Schema.define(version: 0) do
     t.string   "slug"
   end
 
+  create_table "locations", force: true do |t|
+    t.string "name", null: false
+  end
+
+  add_index "locations", ["name"], name: "index_locations_on_name", unique: true, using: :btree
+
   create_table "user_groups", force: true do |t|
     t.string   "name",        null: false
     t.integer  "users_count", null: false
