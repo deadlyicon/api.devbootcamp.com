@@ -54,7 +54,7 @@ class Dbc::Users
   end
 
   def serializer
-    @serializer ||= Dbc::User::Serializer.new(@dbc)
+    @serializer ||= Serializer.new(@dbc)
   end
 
   def serialize user_or_users

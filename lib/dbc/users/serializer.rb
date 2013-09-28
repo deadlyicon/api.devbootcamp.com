@@ -1,4 +1,4 @@
-class Dbc::User::Serializer < Dbc::Serializer
+class Dbc::Users::Serializer < Dbc::Serializer
 
   def serialize user
 

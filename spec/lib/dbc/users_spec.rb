@@ -3,16 +3,15 @@ require 'spec_helper'
 describe Dbc::Users do
 
   let!(:user){ create('dbc/user') }
-  let(:serializer){ Dbc::User::Serializer.new(dbc) }
   let(:user_as_json){ Dbc::User::Serializer.new(dbc).call user }
 
   def serialize user
-    serializer.serialize user
+    dbc.users.serializer.serialize user
   end
 
   describe "all" do
     it "should return all the users as json" do
-      expect(dbc.users.all).to eq Dbc::User.all.map(&serializer)
+      expect(dbc.users.all).to eq Dbc::User.all.map{|u| serialize u}
     end
   end
 

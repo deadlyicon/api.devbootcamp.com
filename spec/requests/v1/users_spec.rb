@@ -102,9 +102,9 @@ describe '/v1/users' do
 
         put "v1/users/#{user.id}", "user" => updates
 
-        # expect(response).to_not be_success
+        expect(response).to_not be_success
 
-        binding.pry
+        # binding.pry
 
       end
     end
