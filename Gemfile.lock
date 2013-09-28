@@ -62,6 +62,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    method_object (0.0.3)
+      simple_struct
     method_source (0.8.2)
     mime-types (1.25)
     minitest (4.7.5)
@@ -120,6 +122,7 @@ GEM
     shoulda-context (1.1.5)
     shoulda-matchers (2.4.0)
       activesupport (>= 3.0.0)
+    simple_struct (0.0.4)
     slop (3.4.6)
     sprockets (2.10.0)
       hike (~> 1.2)
@@ -150,8 +153,10 @@ DEPENDENCIES
   activerecord-fixture_builder
   bcrypt-ruby (~> 3.0.0)
   cancan
+  debugger
   dotenv-rails
   factory_girl
+  method_object
   newrelic_rpm
   pg
   pry-debugger

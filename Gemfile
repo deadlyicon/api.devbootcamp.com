@@ -7,6 +7,7 @@ gem 'pg'
 gem 'unicorn'
 gem 'cancan'
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'method_object'
 
 group :doc do
   gem 'sdoc', require: false
@@ -17,6 +18,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'pry-debugger'
+  gem 'debugger'
 end
 
 group :test do

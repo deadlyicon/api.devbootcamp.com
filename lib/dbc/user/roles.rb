@@ -37,6 +37,7 @@ module Dbc::User::Roles
   end
 
   def roles=(roles)
+    roles = roles.split(/\s+/) if roles.is_a? String
     roles.map!(&:to_s)
     self.roles_mask = (roles & ROLES).map(&method(:role_to_mask)).sum
   end
