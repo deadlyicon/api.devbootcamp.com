@@ -33,7 +33,7 @@ class Dbc::Users
     sanatize_attributes(attributes)
     user = Dbc::User.find(id)
 
-    if attributes.has_key? :password || attributes.has_key? :password_confirmation
+    if attributes.has_key?(:password) || attributes.has_key?(:password_confirmation)
       ensure_ability_to :change_password, user
     end
 

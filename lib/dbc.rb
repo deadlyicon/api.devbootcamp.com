@@ -5,8 +5,7 @@ class Dbc
   end
 
   def initialize options={}
-    user_ids = Array(options[:as])
-    @current_user_group = UserGroup.for(user_ids)
+    @current_user_group = UserGroup.for(options[:as])
   end
 
   attr_reader :current_user_group

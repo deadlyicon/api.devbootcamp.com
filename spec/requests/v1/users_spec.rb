@@ -2,6 +2,14 @@ require 'spec_helper'
 
 describe '/v1/users' do
 
+  let(:user){ Dbc::User.student.last! }
+
+  let(:current_user){ Dbc::User.admin.first! }
+
+  before do
+    stub_current_user_ids [current_user.id]
+  end
+
   describe 'GET /v1/users' do
     it "should" do
       get '/v1/users'
@@ -39,7 +47,6 @@ describe '/v1/users' do
   end
 
   describe "GET /v1/users/:id" do
-    let(:user){ Dbc::User.last }
     it "should return that user as json" do
       get "v1/users/#{user.id}"
 
@@ -56,7 +63,6 @@ describe '/v1/users' do
   end
 
   describe "PUT /v1/users/:id" do
-    let(:user){ Dbc::User.last }
     it "should update and then return that user as json" do
 
       updates = {
@@ -107,6 +113,13 @@ describe '/v1/users' do
     end
 
     context "when you don't have perission to change the password" do
+
+      let(:current_user){ Dbc::User.student.first! }
+
+      before do
+        stub_current_user_ids [Dbc::User.admin.first!.id]
+      end
+
       it "it should fail" do
         updates = {
           "password"              => "ilovecheese",

@@ -11,7 +11,7 @@ class Dbc::UserGroup < ActiveRecord::Base
   before_validation :serialize_user_ids
 
   def self.for user_ids
-    user_ids = Array(user_ids).map do |user_id|
+    user_ids = Array(user_ids).flatten.map do |user_id|
       user_id.respond_to?(:id) ? user_id.id : user_id.to_i
     end.uniq
     raise Invalid, 'a user group must have at least 1 user' if user_ids.empty?
@@ -36,7 +36,7 @@ class Dbc::UserGroup < ActiveRecord::Base
   end
 
   def ability
-    @ability ||= Ability.new self
+    @ability ||= Dbc::Ability.new self
   end
 
   delegate :can?, :cannot?, to: :ability
