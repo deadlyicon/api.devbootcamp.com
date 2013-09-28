@@ -5,11 +5,15 @@ class Dbc
   end
 
   def initialize options={}
-    @as = Array(options[:as])
+    @current_user_ids = Array(options[:as])
   end
 
   def users
     @users ||= Users.new(self)
+  end
+
+  def current_users
+    @current_users ||= User.where(:id => @current_user_ids).to_a
   end
 
 end

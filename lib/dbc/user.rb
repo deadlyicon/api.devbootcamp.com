@@ -1,10 +1,12 @@
 class Dbc::User < ActiveRecord::Base
 
+  include Dbc::User::Roles
+
   has_secure_password
 
-  belongs_to :cohort
-  has_and_belongs_to_many :user_groups
-  has_many :challenge_attempts
+  belongs_to :cohort, class_name: 'Dbc::Cohort'
+  has_and_belongs_to_many :user_groups, class_name: 'Dbc::UserGroup'
+  has_many :challenge_attempts, class_name: 'Dbc::ChallengeAttempt', through: 'user_groups'
 
   validates :name,  presence: true
   validates :email, presence: true

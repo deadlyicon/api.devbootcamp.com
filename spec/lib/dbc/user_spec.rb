@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe User do
+describe Dbc::User do
 
   it { should belong_to :cohort }
 

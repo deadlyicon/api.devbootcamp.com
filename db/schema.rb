@@ -17,11 +17,11 @@ ActiveRecord::Schema.define(version: 0) do
   enable_extension "plpgsql"
 
   create_table "challenge_attempts", force: true do |t|
-    t.integer  "actor_id",                null: false
-    t.integer  "challenge_id",            null: false
-    t.string   "state",        limit: 32, null: false
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.integer  "user_group_id",            null: false
+    t.integer  "challenge_id",             null: false
+    t.string   "state",         limit: 32, null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
     t.string   "repo"
     t.datetime "finished_at"
     t.integer  "cohort_id"
@@ -56,10 +56,10 @@ ActiveRecord::Schema.define(version: 0) do
     t.string   "email"
     t.integer  "cohort_id"
     t.string   "password_digest"
-    t.integer  "roles_mask"
+    t.integer  "roles_mask",      default: 0, null: false
     t.string   "github_token"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
     t.datetime "deleted_at"
     t.datetime "disabled_at"
   end

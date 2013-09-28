@@ -21,7 +21,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'shoulda'
+  gem 'shoulda', github: 'thoughtbot/shoulda'
   gem 'factory_girl'
 end
 
