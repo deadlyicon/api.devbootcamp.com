@@ -7,7 +7,6 @@ gem 'pg'
 gem 'unicorn'
 gem 'cancan'
 gem 'bcrypt-ruby', '~> 3.0.0'
-gem 'active_model_serializers'
 
 group :doc do
   gem 'sdoc', require: false

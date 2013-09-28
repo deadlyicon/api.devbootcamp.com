@@ -4,7 +4,7 @@ class Dbc::Users
     @dbc = dbc
   end
 
-  def index
+  def all
     serialize Dbc::User.all
   end
 

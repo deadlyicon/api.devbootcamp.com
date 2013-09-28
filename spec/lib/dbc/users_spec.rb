@@ -7,9 +7,9 @@ describe Dbc::Users do
 
   let!(:user){ create('dbc/user') }
 
-  describe "index" do
+  describe "all" do
     it "should return all the users as json" do
-      expect(dbc.users.index).to eq [user].as_json
+      expect(dbc.users.all).to eq [user].as_json
     end
   end
 

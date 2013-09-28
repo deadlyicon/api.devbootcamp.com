@@ -11,7 +11,7 @@ describe '/v1/users' do
 
   describe 'POST /v1/users' do
     it "should create a user" do
-      attributes = attributes_for(:user)
+      attributes = attributes_for('dbc/user')
       post '/v1/users', user: attributes
       expect( response.json ).to eq attributes
     end
