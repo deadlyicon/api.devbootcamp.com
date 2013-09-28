@@ -1,7 +1,11 @@
 module DbcHelpers
 
-  def current_user_ids
+  def current_users
     []
+  end
+
+  def current_user_ids
+    current_users.map(&:id)
   end
 
   def dbc

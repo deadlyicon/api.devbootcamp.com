@@ -94,7 +94,6 @@ describe '/v1/users' do
 
     context "when the passwords do not match" do
       it "it should fail" do
-
         updates = {
           "password"              => "3x@#32wDS#3",
           "password_confirmation" => "455^$dsa@@33",
@@ -102,11 +101,24 @@ describe '/v1/users' do
 
         put "v1/users/#{user.id}", "user" => updates
 
-        expect(response).to_not be_success
-
+        expect(response.status).to eq 400
         expect(response.json["errors"]).to eq("password_confirmation"=>["doesn't match Password"])
-
       end
+    end
+
+    context "when you don't have perission to change the password" do
+      it "it should fail" do
+        updates = {
+          "password"              => "ilovecheese",
+          "password_confirmation" => "ilovecheese",
+        }
+
+        put "v1/users/#{user.id}", "user" => updates
+
+        expect(response.status).to eq 401
+        expect(response.body).to be_blank
+      end
+
     end
   end
 

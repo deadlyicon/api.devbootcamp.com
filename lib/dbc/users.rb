@@ -32,6 +32,11 @@ class Dbc::Users
   def update id, attributes={}
     sanatize_attributes(attributes)
     user = Dbc::User.find(id)
+
+    if attributes.has_key? :password || attributes.has_key? :password_confirmation
+      ensure_ability_to :change_password, user
+    end
+
     user.update_attributes(attributes)
     return serialize(user) if user.errors.empty?
     raise Dbc::ValidationError, serialize(user)
@@ -57,6 +62,11 @@ class Dbc::Users
     else
       serializer.serialize(user_or_users)
     end
+  end
+
+  def ensure_ability_to ability, record
+    return if @dbc.current_user_group.can?(ability, record)
+    raise Dbc::PermissionsError
   end
 
 end

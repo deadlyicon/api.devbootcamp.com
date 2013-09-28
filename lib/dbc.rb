@@ -5,7 +5,10 @@ class Dbc
   end
 
   def initialize options={}
-    @current_user_ids = Array(options[:as])
+    user_ids = Array(options[:as])
+    raise ArgumentError, "as option must contain a valid set of user ids" if user_ids.empty?
+    @current_user_group = UserGroup.for(user_ids) or
+    @current_user_group or raise InvalidUserGroup
   end
 
   def users
@@ -16,8 +19,11 @@ class Dbc
     @current_user_group ||= UserGroup.for(@current_user_ids)
   end
 
-  def current_users
-    current_user_group.users
+  class InvalidUserGroup < StandardError
+    def initialize(record)
+      @record = record
+    end
+    attr_reader :record
   end
 
   class ValidationError < StandardError
@@ -28,10 +34,6 @@ class Dbc
   end
 
   class PermissionsError < StandardError
-    def initialize(user_group)
-      @record = record
-    end
-    attr_reader :record
   end
 
 end

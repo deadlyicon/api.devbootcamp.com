@@ -8,6 +8,7 @@ gem 'unicorn'
 gem 'cancan'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'method_object'
+gem 'cancan'
 
 group :doc do
   gem 'sdoc', require: false
