@@ -1,28 +1,28 @@
-class Users
+class Users < Resource
 
-  def self.index
+  def index
     User.all.as_json
   end
 
-  def self.create attributes={}
+  def create attributes={}
     User.create!(attributes).as_json
   end
 
-  def self.new attributes={}
+  def new attributes={}
     User.new(attributes).as_json
   end
 
-  def self.show id
+  def show id
     User.find(id).as_json
   end
 
-  def self.update id, attributes={}
+  def update id, attributes={}
     user = User.find(id)
     user.update_attributes(attributes)
     user.as_json
   end
 
-  def self.destroy id
+  def destroy id
     User.find(id).destroy.as_json
   end
 
