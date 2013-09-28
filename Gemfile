@@ -22,6 +22,7 @@ end
 group :test do
   gem 'shoulda', github: 'thoughtbot/shoulda'
   gem 'factory_girl'
+  gem 'activerecord-fixture_builder'
 end
 
 group :production do

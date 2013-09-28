@@ -5,7 +5,7 @@ describe '/v1/users' do
   describe 'GET /v1/users' do
     it "should" do
       get '/v1/users'
-      expect( response.json ).to eq []
+      expect( response.json ).to eq JSON.parse(dbc.users.all.to_json)
     end
   end
 

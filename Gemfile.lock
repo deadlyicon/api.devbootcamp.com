@@ -27,6 +27,8 @@ GEM
       activesupport (= 4.0.0)
       arel (~> 4.0.0)
     activerecord-deprecated_finders (1.0.3)
+    activerecord-fixture_builder (0.0.1)
+      activerecord (~> 4.0)
     activesupport (4.0.0)
       i18n (~> 0.6, >= 0.6.4)
       minitest (~> 4.2)
@@ -145,6 +147,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-fixture_builder
   bcrypt-ruby (~> 3.0.0)
   cancan
   dotenv-rails

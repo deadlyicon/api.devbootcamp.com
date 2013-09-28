@@ -5,6 +5,9 @@ require 'rspec/rails'
 require 'rspec/autorun'
 require 'factories'
 
+ActiveRecord::FixtureBuilder.build_fixtures!
+ActiveRecord::FixtureBuilder.write_fixtures!
+
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
@@ -34,4 +37,9 @@ RSpec.configure do |config|
   config.order = "random"
 
   config.include FactoryGirl::Syntax::Methods
+
+
+  config.include DbcHelpers#, :example_group => {
+  #   :file_path => config.escaped_path(%w[spec lib dbc])
+  # }
 end
