@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :user do
+  factory "dbc/user" do
 
     sequence(:name)       {|i| "user #{i}"}
     email                 {|user| "#{user.name.gsub(/\s+/,'_')}@example.com"}

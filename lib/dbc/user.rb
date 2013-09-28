@@ -1,4 +1,4 @@
-class User < ActiveRecord::Base
+class Dbc::User < ActiveRecord::Base
 
   has_secure_password
 

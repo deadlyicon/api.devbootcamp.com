@@ -1,32 +1,32 @@
 class V1::UsersController < ApplicationController
 
   def index
-    respond_with Users.index
+    respond_with dbc.users.all
   end
 
   def create
-    user = Users.create(user_params)
+    user = dbs.users.create(user_params)
     respond_with user, location: v1_user_url(user["id"])
   end
 
   def new
-    respond_with Users.new
+    respond_with dbs.users.new
   end
 
   def edit
-    respond_with Users.show(user_id)
+    respond_with dbs.users.show(user_id)
   end
 
   def show
-    respond_with Users.show(user_id)
+    respond_with dbs.users.show(user_id)
   end
 
   def update
-    respond_with Users.update(user_id, user_params)
+    respond_with dbs.users.update(user_id, user_params)
   end
 
   def destroy
-    respond_with Users.destroy(user_id)
+    respond_with dbs.users.destroy(user_id)
   end
 
   private
@@ -36,14 +36,7 @@ class V1::UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(%w{
-      name
-      email
-      password
-      password_confirmation
-      roles
-      github_token
-    })
+    params.require(:user).permit!
   end
 
 end

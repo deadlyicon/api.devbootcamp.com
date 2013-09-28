@@ -6,4 +6,8 @@ class ApplicationController < ActionController::Base
     controller.request.env["action_dispatch.request.formats"] = [Mime[:json]]
   end
 
+  def dbc
+    @dbc = Dbc.as(session[:current_user_ids])
+  end
+
 end
