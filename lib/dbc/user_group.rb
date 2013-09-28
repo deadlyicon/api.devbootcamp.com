@@ -4,6 +4,9 @@ class Dbc::UserGroup < ActiveRecord::Base
   has_and_belongs_to_many :users
 
   def self.for user_ids
+    user_ids = user_ids.map do |user_id|
+      user_id.respond_to?(:id) ? user_id.id : user_id
+    end
     record = joins(:users).where(users:{id:user_ids}).first
     record ? record : create!(user_ids: user_ids)
   end
