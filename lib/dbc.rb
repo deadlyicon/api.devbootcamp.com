@@ -1,20 +1,31 @@
 class Dbc
 
+  def self.authenticate_via_email_and_password email, password
+    user = User.where(email: email).first or return
+    user.authenticate(password) or return
+    as UserGroup.for(user).user_ids
+  end
+
+  def self.authenticate_via_access_token access_token
+    user_group = UserGroup.where(access_token: access_token).first or return
+    as user_group.user_ids
+  end
+
   def self.as *user_ids
     new as: user_ids
   end
 
   def initialize options={}
-    @current_user_group = UserGroup.for(options[:as])
+    @user_group = UserGroup.for(options[:as])
   end
 
-  attr_reader :current_user_group
+  attr_reader :user_group
 
   def users
     @users ||= Users.new(self)
   end
 
-  delegate :roles, :can?, :cannot?, :can!, :cannot!, to: :current_user_group
+  delegate :roles, :can?, :cannot?, :can!, :cannot!, to: :user_group
 
   class InvalidUserGroup < StandardError
     def initialize(record)

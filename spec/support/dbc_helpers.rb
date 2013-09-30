@@ -7,9 +7,15 @@ module DbcHelpers
   end
 
   def become *users
-    @dbc = Dbc.new as: users
-    ApplicationController.any_instance.stub(:current_user_ids).
-      and_return(dbc.current_user_group.user_ids)
+    users.flatten!
+    if users.empty?
+      @dbc = nil
+      current_users = []
+    else
+      @dbc = Dbc.new as: users
+      current_users = dbc.user_group.user_ids
+    end
+    ApplicationController.any_instance.stub(:current_user_ids).and_return(current_users)
   end
 
   def become_a *roles
@@ -17,11 +23,11 @@ module DbcHelpers
   end
 
   def current_users
-    dbc.current_user_group.users
+    dbc.user_group.users
   end
 
   def as *users, &block
-    original_user_ids = dbc.current_user_group.user_ids if dbc
+    original_user_ids = dbc.user_group.user_ids if dbc
     become *users
     yield
   ensure

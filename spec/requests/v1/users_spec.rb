@@ -173,6 +173,7 @@ describe '/v1/users' do
   end
 
 
+  binding.pry
 
 
   given_i_am_authorized_as "a single student" do

@@ -1,1 +1,41 @@
---- {}
+---
+user_groups_000:
+  id: '46'
+  user_ids: '357'
+  access_token: cdd2a69ccc8d4b35b47e77a2956b7777
+user_groups_001:
+  id: '47'
+  user_ids: '335'
+  access_token: 8db48fc2056a4a4d8db848c397386bec
+user_groups_002:
+  id: '48'
+  user_ids: '363,372'
+  access_token: 389754b612ef44ebb874cad99ffc37f0
+user_groups_003:
+  id: '49'
+  user_ids: '309'
+  access_token: d4c77b69876142708a29f4c247a4f629
+user_groups_004:
+  id: '50'
+  user_ids: '282,317,376'
+  access_token: 92b9d50b71724a909ac7c9e792a5cbc7
+user_groups_005:
+  id: '51'
+  user_ids: '267,289,364'
+  access_token: 4b39f96cb3194e6e83dc033526cdc5c4
+user_groups_006:
+  id: '52'
+  user_ids: '319,349,366'
+  access_token: 395cb05748a54f28a650274d57a8ac6c
+user_groups_007:
+  id: '53'
+  user_ids: '351'
+  access_token: 7a291f2d733643d18044bce3b16111e6
+user_groups_008:
+  id: '54'
+  user_ids: '273'
+  access_token: d7126b73215e48e7b951935dcefda679
+user_groups_009:
+  id: '55'
+  user_ids: '321,392'
+  access_token: 397b4e6f689e4df58b50b648a05aab59

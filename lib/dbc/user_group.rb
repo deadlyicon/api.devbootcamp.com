@@ -9,6 +9,7 @@ class Dbc::UserGroup < ActiveRecord::Base
   validates_presence_of :user_ids
 
   before_validation :serialize_user_ids
+  before_validation :generate_access_token
 
   def self.for *user_ids
     user_ids = user_ids.flatten.map do |user_id|
@@ -55,6 +56,10 @@ class Dbc::UserGroup < ActiveRecord::Base
 
   def serialize_user_ids
     write_attribute :user_ids, user_ids.sort.join(',')
+  end
+
+  def generate_access_token
+    write_attribute :access_token, SecureRandom.uuid.gsub('-','')
   end
 
 end
