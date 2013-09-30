@@ -14,13 +14,23 @@ class ApplicationController < ActionController::Base
   def authenticate!
     access_token = params[:access_token] || request.headers.env['HTTP_AUTHORIZATION']
 
-    @dbc = Dbc.authenticate_via_access_token(access_token) if access_token
-
-    @dbc ||= authenticate_with_http_basic do |email, password|
-      Dbc.authenticate_via_email_and_password(email, password)
+    if access_token.present? && access_token !~ /basic/i
+      @dbc = Dbc.authenticate_via_access_token(access_token) and return
+      return render_unauthorize "Invalid Access Token"
     end
 
-    render nothing: true, status: 401 if @dbc.blank?
+    authenticate_with_http_basic do |email, password|
+      if email.present? && password.present?
+        @dbc = Dbc.authenticate_via_email_and_password(email, password) and return
+        return render_unauthorize "Invalid Username or Password"
+      end
+    end
+
+    render_unauthorize
+  end
+
+  def render_unauthorize error="Unauthorized"
+    render json: {status: 401, error: error}, status: 401
   end
 
   attr_reader :dbc

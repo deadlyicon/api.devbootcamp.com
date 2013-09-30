@@ -1,7 +1,7 @@
 class Dbc
 
   def self.authenticate_via_email_and_password email, password
-    return if email.blank? || password.blank?
+    # return if email.blank? || password.blank?
     user = User.where(email: email).first or return
     user.authenticate(password) or return
     as UserGroup.for(user).user_ids
