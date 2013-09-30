@@ -14,24 +14,16 @@ class ApplicationController < ActionController::Base
   def authenticate!
     access_token = params[:access_token] || request.headers.env['HTTP_AUTHORIZATION']
 
-    user = Dbc.authenticate_via_access_token(access_token) if access_token
+    @dbc = Dbc.authenticate_via_access_token(access_token) if access_token
 
-    user ||= authenticate_with_http_basic do |email, password|
-      user = Dbc.authenticate_via_email_and_password(access_token)
+    @dbc ||= authenticate_with_http_basic do |email, password|
+      Dbc.authenticate_via_email_and_password(email, password)
     end
 
-    binding.pry
-
-    render nothing: true, status: 401
+    render nothing: true, status: 401 if @dbc.blank?
   end
 
-  def current_user_ids
-    Array(session[:current_user_ids]).flatten
-  end
+  attr_reader :dbc
 
-  def dbc
-    return nil if current_user_ids.empty?
-    @dbc ||= Dbc.as(current_user_ids)
-  end
 
 end
