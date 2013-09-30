@@ -1,1537 +1,1537 @@
 ---
 users_000:
-  id: '30060'
+  id: '30769'
   name: Jared Grippe
   email: jared@devbootcamp.com
   cohort_id: 
-  password_digest: $2a$04$uxXeeUHhaXEDAkhL1pPcM.T8kM/nyBDPvb7WMkXz0cL2QRPcH9aAS
+  password_digest: $2a$04$aOj.80et71f4fs//aBkJSuNndok2sZ7gytxw33Zy6kIRuKYNayFcm
   roles_mask: '4'
   github_token: 
-  created_at: '2013-09-30 16:21:07.563016'
-  updated_at: '2013-09-30 16:21:07.563016'
+  created_at: '2013-09-30 16:44:58.871895'
+  updated_at: '2013-09-30 16:44:58.871895'
   deleted_at: 
   disabled_at: 
 users_001:
-  id: '30061'
+  id: '30770'
   name: Sherif Abushadi
   email: sherif@devbootcamp.com
   cohort_id: 
-  password_digest: $2a$04$YJD5BgFD0nWJcHQsDqXidOlt5KI6m7WADGHQx9yjVR9e2TcS6Al6O
+  password_digest: $2a$04$v0fX35v7IeS/63diBsbrr.f/aJncGxJmEOfxCxSEmfnVWiviy0jIy
   roles_mask: '4'
   github_token: 
-  created_at: '2013-09-30 16:21:07.570485'
-  updated_at: '2013-09-30 16:21:07.570485'
+  created_at: '2013-09-30 16:44:58.878994'
+  updated_at: '2013-09-30 16:44:58.878994'
   deleted_at: 
   disabled_at: 
 users_002:
-  id: '30062'
+  id: '30771'
   name: user 1
   email: user_1@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$VmnS66hkZXq4zCG.09hTMe0oH6pAqpyCWQNyPKcGX2GpWnFACeK9a
+  cohort_id: '1249'
+  password_digest: $2a$04$f75Gp0MzxxybZnAGaNuwAue8zTKXy4xprUcBQ8AnH/TdHrOeHWx9C
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.60963'
-  updated_at: '2013-09-30 16:21:07.60963'
+  created_at: '2013-09-30 16:44:58.916978'
+  updated_at: '2013-09-30 16:44:58.916978'
   deleted_at: 
   disabled_at: 
 users_003:
-  id: '30063'
+  id: '30772'
   name: user 2
   email: user_2@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$Nb1AM4LBGDbDqsKka.dPNOU42nGW0CwlNEj2ImYPQdVz98CiJYCcq
+  cohort_id: '1249'
+  password_digest: $2a$04$AqcSyxry4/69/ybfvsF35OkHDsFrK8CkNdNBX8ktEOE9z/Rw/aiUS
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.613632'
-  updated_at: '2013-09-30 16:21:07.613632'
+  created_at: '2013-09-30 16:44:58.922293'
+  updated_at: '2013-09-30 16:44:58.922293'
   deleted_at: 
   disabled_at: 
 users_004:
-  id: '30064'
+  id: '30773'
   name: user 3
   email: user_3@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$KeZPNrhDJnVVBoO.Dne7B.3MxQ/Per/Xfy8Q0FQrGhezc0lIzozV.
+  cohort_id: '1249'
+  password_digest: $2a$04$OaUo9UQuOM5U5qr0OafTLOgW8ufzSAYWtlFvwF2xSJYwc28aN6L..
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.617618'
-  updated_at: '2013-09-30 16:21:07.617618'
+  created_at: '2013-09-30 16:44:58.926174'
+  updated_at: '2013-09-30 16:44:58.926174'
   deleted_at: 
   disabled_at: 
 users_005:
-  id: '30065'
+  id: '30774'
   name: user 4
   email: user_4@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$1JPCPZrSVwb46xxh3m7TFeOYmKe5IzdRpMVBGSW87jcpL7abNhThS
+  cohort_id: '1249'
+  password_digest: $2a$04$9H1KwS7g5FJdFXme7I0eweb1bijnjDngXkXlcC4zu3/JTIrVGkCqi
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.621187'
-  updated_at: '2013-09-30 16:21:07.621187'
+  created_at: '2013-09-30 16:44:58.929891'
+  updated_at: '2013-09-30 16:44:58.929891'
   deleted_at: 
   disabled_at: 
 users_006:
-  id: '30066'
+  id: '30775'
   name: user 5
   email: user_5@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$SGeB4/Tj3eAVNHNU9yxM2.0qYzRJ.035RQ/RaBjyzS.CLqz9urQUW
+  cohort_id: '1249'
+  password_digest: $2a$04$tXJltTiY9Qwrf9cb.GJIHeRTpd/YyXhGAdRWKPIorPjc9vnQmgRbu
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.624893'
-  updated_at: '2013-09-30 16:21:07.624893'
+  created_at: '2013-09-30 16:44:58.933393'
+  updated_at: '2013-09-30 16:44:58.933393'
   deleted_at: 
   disabled_at: 
 users_007:
-  id: '30067'
+  id: '30776'
   name: user 6
   email: user_6@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$5BQPTsatDrOPiNgwmGDorue3BxNQO/YANxglHSFnKzRz9YZUtWkjW
+  cohort_id: '1249'
+  password_digest: $2a$04$w3nOAyU/62bqcBMUZcSOd.R/mgxMLscokncqSAJCO1sYLp6DuXlLa
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.628565'
-  updated_at: '2013-09-30 16:21:07.628565'
+  created_at: '2013-09-30 16:44:58.93688'
+  updated_at: '2013-09-30 16:44:58.93688'
   deleted_at: 
   disabled_at: 
 users_008:
-  id: '30068'
+  id: '30777'
   name: user 7
   email: user_7@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$R7jutoIXNh17xrgnuy.uF.wt2NgACqX1OrDnN1aLcgLz2rk/c1zOq
+  cohort_id: '1249'
+  password_digest: $2a$04$C9gyXTgMNMvosXviY8zHKeOR3RHeCYMSDd5psXsapBtVi7KFQvnUO
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.63272'
-  updated_at: '2013-09-30 16:21:07.63272'
+  created_at: '2013-09-30 16:44:58.940568'
+  updated_at: '2013-09-30 16:44:58.940568'
   deleted_at: 
   disabled_at: 
 users_009:
-  id: '30069'
+  id: '30778'
   name: user 8
   email: user_8@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$QjertxYsu61OBJJETVzCc.vTeLGbL7WmL.s44tLvTyKH8aH3LCpca
+  cohort_id: '1249'
+  password_digest: $2a$04$QRrv.SZMuXcBXkDTwspveelVF6BRZRUvT.593oMnCHXF0L3W0mYVK
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.636651'
-  updated_at: '2013-09-30 16:21:07.636651'
+  created_at: '2013-09-30 16:44:58.944145'
+  updated_at: '2013-09-30 16:44:58.944145'
   deleted_at: 
   disabled_at: 
 users_010:
-  id: '30070'
+  id: '30779'
   name: user 9
   email: user_9@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$mUEd3KE2nqSD2v.Ja56b8.tjlXj1oDD.nAtYOjQxOxxFDUTDKvNjC
+  cohort_id: '1249'
+  password_digest: $2a$04$7Wvth4XW3wyPKzY1TaZ3r.Q/Dfc2rwI1MI0aE0xIpkC3WRg8EbtFK
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.640298'
-  updated_at: '2013-09-30 16:21:07.640298'
+  created_at: '2013-09-30 16:44:58.947684'
+  updated_at: '2013-09-30 16:44:58.947684'
   deleted_at: 
   disabled_at: 
 users_011:
-  id: '30071'
+  id: '30780'
   name: user 10
   email: user_10@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$PEdadAVZqToPdvYa3I180O5SMT2Cclii.XmHddisR7rwvz1rfq4fu
+  cohort_id: '1249'
+  password_digest: $2a$04$hvII5ptODJbcQTs.QMOoPemsjjpvv15vDGYvc3.m50Ocs0ZqMih72
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.644'
-  updated_at: '2013-09-30 16:21:07.644'
+  created_at: '2013-09-30 16:44:58.951254'
+  updated_at: '2013-09-30 16:44:58.951254'
   deleted_at: 
   disabled_at: 
 users_012:
-  id: '30072'
+  id: '30781'
   name: user 11
   email: user_11@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$nPi6UxYPpblfsU96SgeFd.usI3.lPG9kbufG329Jsa4P3pQa1Vcum
+  cohort_id: '1249'
+  password_digest: $2a$04$2mMm29ES2Ny9RHvEcKRKg.vs1gIkVO2vLRVDwjmDferRjV/1WZCdG
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.647662'
-  updated_at: '2013-09-30 16:21:07.647662'
+  created_at: '2013-09-30 16:44:58.954825'
+  updated_at: '2013-09-30 16:44:58.954825'
   deleted_at: 
   disabled_at: 
 users_013:
-  id: '30073'
+  id: '30782'
   name: user 12
   email: user_12@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$Vo2arKUZxrOb3Cr5suGltOmyyYn1aHHcicrTm2/6HSZa0vVrUAxkC
+  cohort_id: '1249'
+  password_digest: $2a$04$GNajsSoTzLp896k9903Jx.5hVg6Gd.LCdj9XQRu2UE2PppsFWbZle
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.651194'
-  updated_at: '2013-09-30 16:21:07.651194'
+  created_at: '2013-09-30 16:44:58.958391'
+  updated_at: '2013-09-30 16:44:58.958391'
   deleted_at: 
   disabled_at: 
 users_014:
-  id: '30074'
+  id: '30783'
   name: user 13
   email: user_13@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$rStLU9ieyQzMIqW2OA5/CeuiLqxRyoU0nMFtXoWgBfPsqOBHBi9H.
+  cohort_id: '1249'
+  password_digest: $2a$04$e6s3m1GkVBAe2WnPotRre.57QgJYMbtKAam0in6PGQ0OZk7TMIcXm
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.654713'
-  updated_at: '2013-09-30 16:21:07.654713'
+  created_at: '2013-09-30 16:44:58.961905'
+  updated_at: '2013-09-30 16:44:58.961905'
   deleted_at: 
   disabled_at: 
 users_015:
-  id: '30075'
+  id: '30784'
   name: user 14
   email: user_14@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$0PC0vTor/F7iThZsGIouQOQSK3jItXdyI/rSTE/pweGJbg8qwAoyu
+  cohort_id: '1249'
+  password_digest: $2a$04$Z6FJM78q3MivXzptM/hZdukF8Tu0FGiR2zsaWnGaCAQwp9zAkWft6
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.65818'
-  updated_at: '2013-09-30 16:21:07.65818'
+  created_at: '2013-09-30 16:44:58.965433'
+  updated_at: '2013-09-30 16:44:58.965433'
   deleted_at: 
   disabled_at: 
 users_016:
-  id: '30076'
+  id: '30785'
   name: user 15
   email: user_15@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$q9.QfxS8OlzChPI/nGlCxedm3/X82ZC0YCFeTRTjuUKppc7v.LZQe
+  cohort_id: '1249'
+  password_digest: $2a$04$ejoT7WWEvI1.wPxViAtsreOdgiGnX2tud.AVkUoc8MRSqBjrK1RIG
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.661631'
-  updated_at: '2013-09-30 16:21:07.661631'
+  created_at: '2013-09-30 16:44:58.968872'
+  updated_at: '2013-09-30 16:44:58.968872'
   deleted_at: 
   disabled_at: 
 users_017:
-  id: '30077'
+  id: '30786'
   name: user 16
   email: user_16@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$0lF9hH0YBEf9cRQkGF12SugyONLwP.SNF9ZSjYuYLTH2XJJwWwu7i
+  cohort_id: '1249'
+  password_digest: $2a$04$loOLlXNmKLTRnrzpOc5nTOr.Vwh8/tvO8yB3vuAjsHkEVzqMEFIre
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.665076'
-  updated_at: '2013-09-30 16:21:07.665076'
+  created_at: '2013-09-30 16:44:58.972663'
+  updated_at: '2013-09-30 16:44:58.972663'
   deleted_at: 
   disabled_at: 
 users_018:
-  id: '30078'
+  id: '30787'
   name: user 17
   email: user_17@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$Z3SYLyedKqi/M3qf0buDwuo75xUMeOzo7CMea6xGmhtetmWYkNN5a
+  cohort_id: '1249'
+  password_digest: $2a$04$QHtp5ZKsP9U.hCIgvwmtW.hdZTQR712lQmtw4aVCVckbPQzLrPwWu
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.668604'
-  updated_at: '2013-09-30 16:21:07.668604'
+  created_at: '2013-09-30 16:44:58.97621'
+  updated_at: '2013-09-30 16:44:58.97621'
   deleted_at: 
   disabled_at: 
 users_019:
-  id: '30079'
+  id: '30788'
   name: user 18
   email: user_18@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$A62avWnMT4RXb5Cye.tSj.WmxdL6fOz5JEvyZJ6H/PcJA4l9IONNy
+  cohort_id: '1249'
+  password_digest: $2a$04$l9Hf2xlmDAdMkuMKqmjH2.cKXs4EeKXgNKLe3ivXI9AhXXInubPNO
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.672263'
-  updated_at: '2013-09-30 16:21:07.672263'
+  created_at: '2013-09-30 16:44:58.979637'
+  updated_at: '2013-09-30 16:44:58.979637'
   deleted_at: 
   disabled_at: 
 users_020:
-  id: '30080'
+  id: '30789'
   name: user 19
   email: user_19@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$ACrRJ4uDlV8rHt/fxcQjke.Knpxvk.YaUlg7nxxQ8r3utQWx73SSe
+  cohort_id: '1249'
+  password_digest: $2a$04$gvqF.YFxUwiWXnStz3gTXOTM8NYJSYcIyGOZCjKoggiMjMOTiK8Ti
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.675996'
-  updated_at: '2013-09-30 16:21:07.675996'
+  created_at: '2013-09-30 16:44:58.983264'
+  updated_at: '2013-09-30 16:44:58.983264'
   deleted_at: 
   disabled_at: 
 users_021:
-  id: '30081'
+  id: '30790'
   name: user 20
   email: user_20@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$d1DKoVs1.tdVLCnhlevE0uE.c38ThbVDVy93Eqnl9cUlHBR2hUU7C
+  cohort_id: '1249'
+  password_digest: $2a$04$Fz4LtOk11LHE1fYcmf74meu8ElUM7FL/rtos9/7pYTtmYc9KddV7K
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.679491'
-  updated_at: '2013-09-30 16:21:07.679491'
+  created_at: '2013-09-30 16:44:58.986864'
+  updated_at: '2013-09-30 16:44:58.986864'
   deleted_at: 
   disabled_at: 
 users_022:
-  id: '30082'
+  id: '30791'
   name: user 21
   email: user_21@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$PGRwV0m3Tgnt0LQP/WftDu/2IlDNcykFKKCmMtg89rkiNUiOJ8atG
+  cohort_id: '1249'
+  password_digest: $2a$04$eI.YRowbOa.lMfjZHm6Q8eFSqHHe2XGVA.Dl9BYctbTyh/HzXAeI6
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.682999'
-  updated_at: '2013-09-30 16:21:07.682999'
+  created_at: '2013-09-30 16:44:58.990375'
+  updated_at: '2013-09-30 16:44:58.990375'
   deleted_at: 
   disabled_at: 
 users_023:
-  id: '30083'
+  id: '30792'
   name: user 22
   email: user_22@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$QJrz9/oeEvB8xydbmoHFsube5kKFjxmjST.3RYLrjKRFlLwTZhcOu
+  cohort_id: '1249'
+  password_digest: $2a$04$lkQwLYTZB6DlTmla5Yx79.FHe.3.wnc/nQBiKpRS5c1PcCbuoJ4Wa
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.686477'
-  updated_at: '2013-09-30 16:21:07.686477'
+  created_at: '2013-09-30 16:44:58.993877'
+  updated_at: '2013-09-30 16:44:58.993877'
   deleted_at: 
   disabled_at: 
 users_024:
-  id: '30084'
+  id: '30793'
   name: user 23
   email: user_23@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$7zp69yATH6NjvQJf4OqQpeLYQD62BCHtL.ICQMUELeWVNgvaXVdUm
+  cohort_id: '1249'
+  password_digest: $2a$04$kTfshlpIVbM1C2smIdiIT.DMU5.0Vf6sMOHujWU/EU10PduhOi/8K
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.69003'
-  updated_at: '2013-09-30 16:21:07.69003'
+  created_at: '2013-09-30 16:44:58.997326'
+  updated_at: '2013-09-30 16:44:58.997326'
   deleted_at: 
   disabled_at: 
 users_025:
-  id: '30085'
+  id: '30794'
   name: user 24
   email: user_24@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$v1/idLatwvJRnEkloSC1puYqyj1LfhnEWgwa0ab7QHNBvRi67n6YO
+  cohort_id: '1249'
+  password_digest: $2a$04$lA5vuGC0pyRpOJFPS99FFOQEf2g1aXZOK9g.i4o6tzooYJ3drwnPu
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.69365'
-  updated_at: '2013-09-30 16:21:07.69365'
+  created_at: '2013-09-30 16:44:59.000766'
+  updated_at: '2013-09-30 16:44:59.000766'
   deleted_at: 
   disabled_at: 
 users_026:
-  id: '30086'
+  id: '30795'
   name: user 25
   email: user_25@example.com
-  cohort_id: '1217'
-  password_digest: $2a$04$fxHkB3St8lGFlBa/UnOvvuhbrg0dOhueND/bkUBuVKoAt/9MjketG
+  cohort_id: '1249'
+  password_digest: $2a$04$F7PZgBrhgOA0Sno7QG8D7.qM56RhS7HRRNQ0uBD60Nl.EUL/d/NqK
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.697394'
-  updated_at: '2013-09-30 16:21:07.697394'
+  created_at: '2013-09-30 16:44:59.004219'
+  updated_at: '2013-09-30 16:44:59.004219'
   deleted_at: 
   disabled_at: 
 users_027:
-  id: '30087'
+  id: '30796'
   name: user 26
   email: user_26@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$DJ1oSrB2RxcEoVV4pNuHvumelDvwdL1oj5ZzLzAQjJqJ2/Q0BROL.
+  cohort_id: '1250'
+  password_digest: $2a$04$C23avjt0fR.k87WjlU8nPufZy42I8i3A3Kc73DnjlHdzO2sllS/tm
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.706135'
-  updated_at: '2013-09-30 16:21:07.706135'
+  created_at: '2013-09-30 16:44:59.011978'
+  updated_at: '2013-09-30 16:44:59.011978'
   deleted_at: 
   disabled_at: 
 users_028:
-  id: '30088'
+  id: '30797'
   name: user 27
   email: user_27@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$pMh7fVg6NFAUNS.qKsad5elnocNBYXRAXBPSjAHk2dznQFyJXLg2O
+  cohort_id: '1250'
+  password_digest: $2a$04$dbD28Oiy3okvt4HnSEpsI.Tl407.ZZ/a7R5TnsvLGe.S7dKWix9AC
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.710311'
-  updated_at: '2013-09-30 16:21:07.710311'
+  created_at: '2013-09-30 16:44:59.015535'
+  updated_at: '2013-09-30 16:44:59.015535'
   deleted_at: 
   disabled_at: 
 users_029:
-  id: '30089'
+  id: '30798'
   name: user 28
   email: user_28@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$s1BxTLtfGGVDMOMdE934M.La7zTYf2r.ETEtBaZacNJ3Ugj6mV6J.
+  cohort_id: '1250'
+  password_digest: $2a$04$JLhoNiHCgliZUkb9DDrkm.P6LNnV8613/2Bm5itMsthTHPTeDezdW
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.714472'
-  updated_at: '2013-09-30 16:21:07.714472'
+  created_at: '2013-09-30 16:44:59.019094'
+  updated_at: '2013-09-30 16:44:59.019094'
   deleted_at: 
   disabled_at: 
 users_030:
-  id: '30090'
+  id: '30799'
   name: user 29
   email: user_29@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$rd44FEsU6l4b6OwI7DK2oO/MxDk08ith/W3tQSfI9eKYQt11c0VFO
+  cohort_id: '1250'
+  password_digest: $2a$04$RfbHsFn7YTDvEcHyKdDMm.juY9DaJ7NE2ZnNZgVu251Pg.TUYU3Aq
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.718159'
-  updated_at: '2013-09-30 16:21:07.718159'
+  created_at: '2013-09-30 16:44:59.022701'
+  updated_at: '2013-09-30 16:44:59.022701'
   deleted_at: 
   disabled_at: 
 users_031:
-  id: '30091'
+  id: '30800'
   name: user 30
   email: user_30@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$tm15lF/TPMVSRMObU26YPOwGUM5uo5Q1R/g4tCQ0ERQ/1Ck8Oc5zK
+  cohort_id: '1250'
+  password_digest: $2a$04$MBoXWWHn/FkHNGofGQoCtezS5hr8CnVK96L5ua4pkcH5Mlyf9xQUS
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.721886'
-  updated_at: '2013-09-30 16:21:07.721886'
+  created_at: '2013-09-30 16:44:59.026313'
+  updated_at: '2013-09-30 16:44:59.026313'
   deleted_at: 
   disabled_at: 
 users_032:
-  id: '30092'
+  id: '30801'
   name: user 31
   email: user_31@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$tThp7fhhFkGSsSCeyKUXNOcG49NvJX7XdIQZRKl8Du0ILvmsLcL4i
+  cohort_id: '1250'
+  password_digest: $2a$04$uLyB8I7HbG0YMwsWXuBUaeohv9gS7Rpz0jrEI0Qg4cGKkLbqVn87O
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.725769'
-  updated_at: '2013-09-30 16:21:07.725769'
+  created_at: '2013-09-30 16:44:59.030066'
+  updated_at: '2013-09-30 16:44:59.030066'
   deleted_at: 
   disabled_at: 
 users_033:
-  id: '30093'
+  id: '30802'
   name: user 32
   email: user_32@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$hTs8MIxPCYgQ/k66D69B2OMOa0160O/gGO2kAXojTHramejx2.n1a
+  cohort_id: '1250'
+  password_digest: $2a$04$XiCcM690VNJKJa2Fbbpsn.2gwj7nclCeG6WtBmjgqTv2JoKaAFMP.
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.729716'
-  updated_at: '2013-09-30 16:21:07.729716'
+  created_at: '2013-09-30 16:44:59.03376'
+  updated_at: '2013-09-30 16:44:59.03376'
   deleted_at: 
   disabled_at: 
 users_034:
-  id: '30094'
+  id: '30803'
   name: user 33
   email: user_33@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$Gh8LxcoY/RPdo1IFsV0LbuaXtTO6rSD5ByjJfaZGG6nT7ohn0fEX.
+  cohort_id: '1250'
+  password_digest: $2a$04$sngtm0ezp6Ng2yJOFTvc1OoXScl1As5E9jOLW3R8ynkfKexNS/1SS
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.733434'
-  updated_at: '2013-09-30 16:21:07.733434'
+  created_at: '2013-09-30 16:44:59.037257'
+  updated_at: '2013-09-30 16:44:59.037257'
   deleted_at: 
   disabled_at: 
 users_035:
-  id: '30095'
+  id: '30804'
   name: user 34
   email: user_34@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$uPYodfysKwLQdgnBSJBBN.jrfkEWTk8r3llicDNeXj5T5tM2.7Asa
+  cohort_id: '1250'
+  password_digest: $2a$04$twtbNvVzNhCGRMRfEIlowOkdykqv6wbKp5OyepGe8Yx.DCSgz2KiO
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.736987'
-  updated_at: '2013-09-30 16:21:07.736987'
+  created_at: '2013-09-30 16:44:59.040783'
+  updated_at: '2013-09-30 16:44:59.040783'
   deleted_at: 
   disabled_at: 
 users_036:
-  id: '30096'
+  id: '30805'
   name: user 35
   email: user_35@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$Tk8pHq8421l/8fes4NggxehhRwdtHAKNtXJfjaN..RlOsaejzYeQS
+  cohort_id: '1250'
+  password_digest: $2a$04$NpnYPlW5hj/yurutFXuEY.pXJyRjFTLivpWChhRzDDG9pvBK890lG
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.740542'
-  updated_at: '2013-09-30 16:21:07.740542'
+  created_at: '2013-09-30 16:44:59.044536'
+  updated_at: '2013-09-30 16:44:59.044536'
   deleted_at: 
   disabled_at: 
 users_037:
-  id: '30097'
+  id: '30806'
   name: user 36
   email: user_36@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$95GQAR2cP0m.ySpVslg/p.qebUP.HFaZ2Wj7QnSpWnQKxPYMghNN2
+  cohort_id: '1250'
+  password_digest: $2a$04$wtTFY2OVl.wy5L14UCapZ.G0wVlDqL4eMqlOjzom8CztH7KI6HLWS
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.744014'
-  updated_at: '2013-09-30 16:21:07.744014'
+  created_at: '2013-09-30 16:44:59.049466'
+  updated_at: '2013-09-30 16:44:59.049466'
   deleted_at: 
   disabled_at: 
 users_038:
-  id: '30098'
+  id: '30807'
   name: user 37
   email: user_37@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$3KTt0D4A8YUAuhcN1.3Xv.oEeqRx/97XevQ4hB6OjiNwqrWm0047K
+  cohort_id: '1250'
+  password_digest: $2a$04$RACSGnqtO2tP3JqP.GgVyuVRvLWc7iDXy7ZOfo/oaRazGQJm3u/8u
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.747543'
-  updated_at: '2013-09-30 16:21:07.747543'
+  created_at: '2013-09-30 16:44:59.053478'
+  updated_at: '2013-09-30 16:44:59.053478'
   deleted_at: 
   disabled_at: 
 users_039:
-  id: '30099'
+  id: '30808'
   name: user 38
   email: user_38@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$AFnn0U9srF6o0q0IHT7llO5QOkDz9qbMNFJIIk1B4G6ir7lbP72Hm
+  cohort_id: '1250'
+  password_digest: $2a$04$CaRKQYBdtiJieMBaqCFfXu/tL18UbjmEy/nm286IZ/e4wKHIZ.M2m
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.750953'
-  updated_at: '2013-09-30 16:21:07.750953'
+  created_at: '2013-09-30 16:44:59.057084'
+  updated_at: '2013-09-30 16:44:59.057084'
   deleted_at: 
   disabled_at: 
 users_040:
-  id: '30100'
+  id: '30809'
   name: user 39
   email: user_39@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$6gKSEuWa.Q9Y.uPDJa8acOQ9V5NRXaa/abQzYG4SF9HfzALpZv/xu
+  cohort_id: '1250'
+  password_digest: $2a$04$d/8XcLq6Xu7fyjKmG0SoBu/pck3mk7r.Hteptfgch613hQT6puT3C
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.7546'
-  updated_at: '2013-09-30 16:21:07.7546'
+  created_at: '2013-09-30 16:44:59.060581'
+  updated_at: '2013-09-30 16:44:59.060581'
   deleted_at: 
   disabled_at: 
 users_041:
-  id: '30101'
+  id: '30810'
   name: user 40
   email: user_40@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$Hsu3hVIo1e7648JzAYGSVuKgJ4VvVEfmv2rV17/qh5Lkcdi9ZmfDe
+  cohort_id: '1250'
+  password_digest: $2a$04$kKOTC6Q.rqJr7i7v7qelvOg4HN3ocCfhHNhfedaBDDk0PZrAjZ.Py
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.758321'
-  updated_at: '2013-09-30 16:21:07.758321'
+  created_at: '2013-09-30 16:44:59.064017'
+  updated_at: '2013-09-30 16:44:59.064017'
   deleted_at: 
   disabled_at: 
 users_042:
-  id: '30102'
+  id: '30811'
   name: user 41
   email: user_41@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$f1q7gfMX037918afZVtbS.Cgcz.tmCtTANfkDa6rkpszPljSCBWbu
+  cohort_id: '1250'
+  password_digest: $2a$04$rnXwRot1pseRkiDtHKa9fui3h7QHHL9n4mNGKPcR4dbaiytqaOUuW
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.761826'
-  updated_at: '2013-09-30 16:21:07.761826'
+  created_at: '2013-09-30 16:44:59.067332'
+  updated_at: '2013-09-30 16:44:59.067332'
   deleted_at: 
   disabled_at: 
 users_043:
-  id: '30103'
+  id: '30812'
   name: user 42
   email: user_42@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$I2ALvmA.iYJ/.XwNDIuGwenLB4vVZ1iWp86zCou/3mZNsxoh4FRrC
+  cohort_id: '1250'
+  password_digest: $2a$04$6NHIStJe1wTupgUPL.sydu7eZWlk7uuNtV4a3H2S7wsIVmAdswiLS
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.765317'
-  updated_at: '2013-09-30 16:21:07.765317'
+  created_at: '2013-09-30 16:44:59.070779'
+  updated_at: '2013-09-30 16:44:59.070779'
   deleted_at: 
   disabled_at: 
 users_044:
-  id: '30104'
+  id: '30813'
   name: user 43
   email: user_43@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$1NER.Etn1pi8MzmV81gRweVVrGUBYBzA2ny6so9Yx5GPols/BPV2.
+  cohort_id: '1250'
+  password_digest: $2a$04$lrp417bKbx1ILwjU3PVUsee3oIjujPORL3FRl0ivXP.Fg9sBlc4wq
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.768652'
-  updated_at: '2013-09-30 16:21:07.768652'
+  created_at: '2013-09-30 16:44:59.074304'
+  updated_at: '2013-09-30 16:44:59.074304'
   deleted_at: 
   disabled_at: 
 users_045:
-  id: '30105'
+  id: '30814'
   name: user 44
   email: user_44@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$G0fu13imQUEa5c8n0mb7Z.OUyBoaiQTQ/Sb3oDZkuakUkptJVeoQy
+  cohort_id: '1250'
+  password_digest: $2a$04$h0OrA9ne0JhIXFPCoY7rfePqWSFhIgtsagYgPCikgQoQ3Ab05DFxC
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.772145'
-  updated_at: '2013-09-30 16:21:07.772145'
+  created_at: '2013-09-30 16:44:59.0779'
+  updated_at: '2013-09-30 16:44:59.0779'
   deleted_at: 
   disabled_at: 
 users_046:
-  id: '30106'
+  id: '30815'
   name: user 45
   email: user_45@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$ny9XdapXNXxzWckfv91wbOKwhs07Qrp2JfV3zeffYDdLI21MkTI0.
+  cohort_id: '1250'
+  password_digest: $2a$04$JGMmGy.1XUn8zfreDXSxduqGiDK.zPA7ByWGVJb9ZBXn5WvJBid4i
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.775765'
-  updated_at: '2013-09-30 16:21:07.775765'
+  created_at: '2013-09-30 16:44:59.081523'
+  updated_at: '2013-09-30 16:44:59.081523'
   deleted_at: 
   disabled_at: 
 users_047:
-  id: '30107'
+  id: '30816'
   name: user 46
   email: user_46@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$El/cT8vVFb0iCNwwvS6Ebu.mfvCb7NOOD3EAY5B8AZuHw6IoxoK7e
+  cohort_id: '1250'
+  password_digest: $2a$04$msPrpPLgmJihmlmyAEEPk.Wv9.eWMxbazXnjsidQ.8Z7rQOMU6ToW
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.779366'
-  updated_at: '2013-09-30 16:21:07.779366'
+  created_at: '2013-09-30 16:44:59.085038'
+  updated_at: '2013-09-30 16:44:59.085038'
   deleted_at: 
   disabled_at: 
 users_048:
-  id: '30108'
+  id: '30817'
   name: user 47
   email: user_47@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$5e2GfHMHrbJD7yYSYvAFruOOsyL8BVGVE3onZGa9ZkPEKZhCXWqOu
+  cohort_id: '1250'
+  password_digest: $2a$04$p5IkiV2H4JzxBDIAx4XjxOX1/InjKPT3nQtqKsWYIGdpo2vKiE13K
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.783329'
-  updated_at: '2013-09-30 16:21:07.783329'
+  created_at: '2013-09-30 16:44:59.088752'
+  updated_at: '2013-09-30 16:44:59.088752'
   deleted_at: 
   disabled_at: 
 users_049:
-  id: '30109'
+  id: '30818'
   name: user 48
   email: user_48@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$MGIZ3P31ALQ0o6IUFSyyI.UFIoEYltIXAos7GvidzKc9j0ZrTcG5C
+  cohort_id: '1250'
+  password_digest: $2a$04$lNsqMnei12v7GTm92ifZaeo7ylDS/TDKDYsg951x35tPi4D0ALGx2
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.786878'
-  updated_at: '2013-09-30 16:21:07.786878'
+  created_at: '2013-09-30 16:44:59.092426'
+  updated_at: '2013-09-30 16:44:59.092426'
   deleted_at: 
   disabled_at: 
 users_050:
-  id: '30110'
+  id: '30819'
   name: user 49
   email: user_49@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$z9a2M/D0geN0dJDliIqnV.LpGR8xnEA2BzGy096HwO1Ghas1CcTvm
+  cohort_id: '1250'
+  password_digest: $2a$04$JPweNFZ16xIhAd3gNtyCHO13CHV9bvhSYs.XgAprKn2wI5nkOhcOq
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.790531'
-  updated_at: '2013-09-30 16:21:07.790531'
+  created_at: '2013-09-30 16:44:59.096122'
+  updated_at: '2013-09-30 16:44:59.096122'
   deleted_at: 
   disabled_at: 
 users_051:
-  id: '30111'
+  id: '30820'
   name: user 50
   email: user_50@example.com
-  cohort_id: '1218'
-  password_digest: $2a$04$py75mkIKLz7M.es3f/V9p.OjzYxOTOf5xzoYaQABdoGrnBxY5Psx2
+  cohort_id: '1250'
+  password_digest: $2a$04$guR1YaZMh7Konw2K2fE./..QErDWBik.hy.cQMwFU1aGQ9vveutlO
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.794244'
-  updated_at: '2013-09-30 16:21:07.794244'
+  created_at: '2013-09-30 16:44:59.09972'
+  updated_at: '2013-09-30 16:44:59.09972'
   deleted_at: 
   disabled_at: 
 users_052:
-  id: '30112'
+  id: '30821'
   name: user 51
   email: user_51@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$Sc0IHjsnjx8B9r.YKtikp.bwwpESsg.Q/XfitcY/JUCfnnkyp/BT2
+  cohort_id: '1251'
+  password_digest: $2a$04$Y7PMgLHqOUm71o3iYHM1RuOk6Rhg3dUMNM/drSkbhXJAMPF1EhjKC
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.801708'
-  updated_at: '2013-09-30 16:21:07.801708'
+  created_at: '2013-09-30 16:44:59.107566'
+  updated_at: '2013-09-30 16:44:59.107566'
   deleted_at: 
   disabled_at: 
 users_053:
-  id: '30113'
+  id: '30822'
   name: user 52
   email: user_52@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$5kNIlT4HYOoqUyHlzVVTOuYnQm5onSFx0RJsBUtT1WFTyA5jAut56
+  cohort_id: '1251'
+  password_digest: $2a$04$kjq.jU2Y2.jIhGLThF5sJeCP9VsVGS.M6rWBNMcLlKDoLHFH7mU2a
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.805322'
-  updated_at: '2013-09-30 16:21:07.805322'
+  created_at: '2013-09-30 16:44:59.111213'
+  updated_at: '2013-09-30 16:44:59.111213'
   deleted_at: 
   disabled_at: 
 users_054:
-  id: '30114'
+  id: '30823'
   name: user 53
   email: user_53@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$YQ2E0cV2wQGDkyQomgX6oOlEvd1e5AjDbniZ/J7.3akQlbxN6OIMu
+  cohort_id: '1251'
+  password_digest: $2a$04$B2WFOPjbg8sdv4l3TgLIW.639VfwcGYJ2vFGpvRU8NjJGoTI05SP6
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.808885'
-  updated_at: '2013-09-30 16:21:07.808885'
+  created_at: '2013-09-30 16:44:59.114677'
+  updated_at: '2013-09-30 16:44:59.114677'
   deleted_at: 
   disabled_at: 
 users_055:
-  id: '30115'
+  id: '30824'
   name: user 54
   email: user_54@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$I7DnqLL7x72/xb.F2sgfA.xovq1SCV1Sv5rF8b3.KW6IlHUDCbGUu
+  cohort_id: '1251'
+  password_digest: $2a$04$Leq1z0uC.3JpfKpWooEF6.qTXscTY5erWdlyjmZIH8OAXR4LS9JYW
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.812421'
-  updated_at: '2013-09-30 16:21:07.812421'
+  created_at: '2013-09-30 16:44:59.118247'
+  updated_at: '2013-09-30 16:44:59.118247'
   deleted_at: 
   disabled_at: 
 users_056:
-  id: '30116'
+  id: '30825'
   name: user 55
   email: user_55@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$/bzCTwoYX/2BlWjkuJfhyuHZ.I9FUqxTB/.LyQ8Pk6K0Nc5527a0C
+  cohort_id: '1251'
+  password_digest: $2a$04$yHqj44qCmMSok5tzuKx9AOgRClMpm7dJ.vO3iNSyQmibwX5mC37MO
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.815881'
-  updated_at: '2013-09-30 16:21:07.815881'
+  created_at: '2013-09-30 16:44:59.121803'
+  updated_at: '2013-09-30 16:44:59.121803'
   deleted_at: 
   disabled_at: 
 users_057:
-  id: '30117'
+  id: '30826'
   name: user 56
   email: user_56@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$InDuiEPzttgMcVCt2ZIqmuNnFQYFYsffPcsR6tOdXou0fZRot8LP2
+  cohort_id: '1251'
+  password_digest: $2a$04$A4lmbmudvBt6vD7zCntKkuARU5ZgK7NL6QWtd9Q1Go45qflavZUcu
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.819403'
-  updated_at: '2013-09-30 16:21:07.819403'
+  created_at: '2013-09-30 16:44:59.125335'
+  updated_at: '2013-09-30 16:44:59.125335'
   deleted_at: 
   disabled_at: 
 users_058:
-  id: '30118'
+  id: '30827'
   name: user 57
   email: user_57@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$6YMU./7Hq8fxyeYeD2Zcj.ArYKfQxwkXqzS0Bx53wSBLqA8BEbYj.
+  cohort_id: '1251'
+  password_digest: $2a$04$a3vbtlkbykXHB9VYXekcWuof7h7G/9OFx1ejcJC4RNs2LUkW3NWtS
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.824407'
-  updated_at: '2013-09-30 16:21:07.824407'
+  created_at: '2013-09-30 16:44:59.128847'
+  updated_at: '2013-09-30 16:44:59.128847'
   deleted_at: 
   disabled_at: 
 users_059:
-  id: '30119'
+  id: '30828'
   name: user 58
   email: user_58@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$1r4kSzxCJdKvrnjn/CICe.n42N2qdS7lDbsBmoGlEIVmYYqBF1OjC
+  cohort_id: '1251'
+  password_digest: $2a$04$pV3Dj/IptvGT0oqYxQB2kODe0Q1Folx.Etd6Ps.MdFFDREDFqallq
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.82848'
-  updated_at: '2013-09-30 16:21:07.82848'
+  created_at: '2013-09-30 16:44:59.132393'
+  updated_at: '2013-09-30 16:44:59.132393'
   deleted_at: 
   disabled_at: 
 users_060:
-  id: '30120'
+  id: '30829'
   name: user 59
   email: user_59@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$vd9L8S.1UE5jR6VL3xz2VO680DqMH9zGt4zx7n7IkUxEuDZ7IDICO
+  cohort_id: '1251'
+  password_digest: $2a$04$ov7Sw9d6fB/TGlNLUlYxkeUTeO01OnO/qW9SmrfAQgOXUCbE.hl/i
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.831971'
-  updated_at: '2013-09-30 16:21:07.831971'
+  created_at: '2013-09-30 16:44:59.135903'
+  updated_at: '2013-09-30 16:44:59.135903'
   deleted_at: 
   disabled_at: 
 users_061:
-  id: '30121'
+  id: '30830'
   name: user 60
   email: user_60@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$I891PXeHBD.ZyHqEIplWsODOC9sFDnAAWLs1MR/1e6W.xjucSnKeC
+  cohort_id: '1251'
+  password_digest: $2a$04$LxtcBMURm1dUPTtl9yXBAeHw.k8MId8mh29j0ENT8FohKbcwzdcgK
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.835331'
-  updated_at: '2013-09-30 16:21:07.835331'
+  created_at: '2013-09-30 16:44:59.139304'
+  updated_at: '2013-09-30 16:44:59.139304'
   deleted_at: 
   disabled_at: 
 users_062:
-  id: '30122'
+  id: '30831'
   name: user 61
   email: user_61@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$MdcSYy6Fmh43cB4JC1irhep0Iwt5mCuJ1MZkBmA/.QjWchgo4DNKW
+  cohort_id: '1251'
+  password_digest: $2a$04$KBtjof4pTajJ0F7WpRe4MugaTSX3fsYuQplKDYWXnPeaiTLtO71Sm
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.838812'
-  updated_at: '2013-09-30 16:21:07.838812'
+  created_at: '2013-09-30 16:44:59.142805'
+  updated_at: '2013-09-30 16:44:59.142805'
   deleted_at: 
   disabled_at: 
 users_063:
-  id: '30123'
+  id: '30832'
   name: user 62
   email: user_62@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$l3ZeG5HO0NtyjXpOIKrwv.4ThqsUUx6EU3O5R0KhZ2Fr6tIV5oWgO
+  cohort_id: '1251'
+  password_digest: $2a$04$Ye5D8iHLr4DyjiEvF77.bue78F9PCl4JOvGrJbH2H8g7KQ1vS4ZGq
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.84252'
-  updated_at: '2013-09-30 16:21:07.84252'
+  created_at: '2013-09-30 16:44:59.14616'
+  updated_at: '2013-09-30 16:44:59.14616'
   deleted_at: 
   disabled_at: 
 users_064:
-  id: '30124'
+  id: '30833'
   name: user 63
   email: user_63@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$DktrvS8LDICKjnK6.6YE6uys.gv.PYV7xAS5rPUAWxmDyMWSJfs9O
+  cohort_id: '1251'
+  password_digest: $2a$04$FHo24B.OZ6haJHx/g4RSm.FLh0VtiGNlXSY14YpXAOPT/dBYEL3Vy
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.845968'
-  updated_at: '2013-09-30 16:21:07.845968'
+  created_at: '2013-09-30 16:44:59.149565'
+  updated_at: '2013-09-30 16:44:59.149565'
   deleted_at: 
   disabled_at: 
 users_065:
-  id: '30125'
+  id: '30834'
   name: user 64
   email: user_64@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$UH4j/vCTF9IZFkdzz3.LN.Y4tLw.6xhuJAz3hEK4Dmgk0kGIL8MdK
+  cohort_id: '1251'
+  password_digest: $2a$04$SzYUUlYMT47XztKGAXrCbuLHI7TWDrco7dqxwqWTNqw75UJu6zOTq
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.849413'
-  updated_at: '2013-09-30 16:21:07.849413'
+  created_at: '2013-09-30 16:44:59.153063'
+  updated_at: '2013-09-30 16:44:59.153063'
   deleted_at: 
   disabled_at: 
 users_066:
-  id: '30126'
+  id: '30835'
   name: user 65
   email: user_65@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$PHH0KOGGOeRJ42VmX7ZY6OXUXM.YqUOnYh58q22rdITcESwjWO0ou
+  cohort_id: '1251'
+  password_digest: $2a$04$7cohH.z/2ZJH9Saa11jf9uzjmKfwnUvaPf/lpryIPcdN03hlDq.Ga
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.852884'
-  updated_at: '2013-09-30 16:21:07.852884'
+  created_at: '2013-09-30 16:44:59.156641'
+  updated_at: '2013-09-30 16:44:59.156641'
   deleted_at: 
   disabled_at: 
 users_067:
-  id: '30127'
+  id: '30836'
   name: user 66
   email: user_66@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$FENdt9DnMEPbR7wBAYzLNefjquIYNWkSxz5pGijQl.BZcsxhXI5AC
+  cohort_id: '1251'
+  password_digest: $2a$04$ZE6vrqq7bF9GopeIWno5xeq16X91THcGCgk1UMv10KqYI2dS8tbtS
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.856386'
-  updated_at: '2013-09-30 16:21:07.856386'
+  created_at: '2013-09-30 16:44:59.160225'
+  updated_at: '2013-09-30 16:44:59.160225'
   deleted_at: 
   disabled_at: 
 users_068:
-  id: '30128'
+  id: '30837'
   name: user 67
   email: user_67@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$d3LqiOjAhOl4M4w4S0yhTOPm85nqlmgLReUExacYzdgDmsBOCWgKS
+  cohort_id: '1251'
+  password_digest: $2a$04$XrGmO6l05.MqwjcsrMRntuhxHMbJUwvuboprX4e7OBGwaSst.i5Ue
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.859971'
-  updated_at: '2013-09-30 16:21:07.859971'
+  created_at: '2013-09-30 16:44:59.163912'
+  updated_at: '2013-09-30 16:44:59.163912'
   deleted_at: 
   disabled_at: 
 users_069:
-  id: '30129'
+  id: '30838'
   name: user 68
   email: user_68@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$x1aPiiB0I8bAvzF0ZLL7e.ONM3FVWQhRu32ZAaSxqHCR2McYhW.Bu
+  cohort_id: '1251'
+  password_digest: $2a$04$th4toBHHN.qU59Er18j/7ekO7TnfsklrodrjoPEdi6XzjLbk4eZxS
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.863745'
-  updated_at: '2013-09-30 16:21:07.863745'
+  created_at: '2013-09-30 16:44:59.167608'
+  updated_at: '2013-09-30 16:44:59.167608'
   deleted_at: 
   disabled_at: 
 users_070:
-  id: '30130'
+  id: '30839'
   name: user 69
   email: user_69@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$c4saVjUlLHrHbw/g8TNB6uun19er5iD4XXoK1ByxJUy3u0N5vvvbO
+  cohort_id: '1251'
+  password_digest: $2a$04$DVL9yEJZKyCj67OR/pdjaOmLiYy8rOqU7EKXZ1/TXC.hA.zhD.Y5G
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.867266'
-  updated_at: '2013-09-30 16:21:07.867266'
+  created_at: '2013-09-30 16:44:59.171091'
+  updated_at: '2013-09-30 16:44:59.171091'
   deleted_at: 
   disabled_at: 
 users_071:
-  id: '30131'
+  id: '30840'
   name: user 70
   email: user_70@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$CWVzRlKZuZNfMRTStOmTLOD9DCEz5O00phXXwoeaNjjkZh3MBtgvK
+  cohort_id: '1251'
+  password_digest: $2a$04$XzD.eoqDl5NjPwqSeRNtgOLoVuUrymD0/hGigUF/o52imIbm4.zhK
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.870778'
-  updated_at: '2013-09-30 16:21:07.870778'
+  created_at: '2013-09-30 16:44:59.174672'
+  updated_at: '2013-09-30 16:44:59.174672'
   deleted_at: 
   disabled_at: 
 users_072:
-  id: '30132'
+  id: '30841'
   name: user 71
   email: user_71@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$Ql6TbRwin44OuLYlN86C/uop3ESZ7Usyy0YDFMVttyebLrw/a62bG
+  cohort_id: '1251'
+  password_digest: $2a$04$N2wm9lyzOcR4i/9Ce.Cdk.2EnSHXQ1dCYK4Y1MSrnB6zII7639LXW
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.874654'
-  updated_at: '2013-09-30 16:21:07.874654'
+  created_at: '2013-09-30 16:44:59.178319'
+  updated_at: '2013-09-30 16:44:59.178319'
   deleted_at: 
   disabled_at: 
 users_073:
-  id: '30133'
+  id: '30842'
   name: user 72
   email: user_72@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$nlNmGxnNVUn/Hag.NUZRG.plU7.xOhsMNkmFiMdiRjzDY4YYUSxzm
+  cohort_id: '1251'
+  password_digest: $2a$04$vhf6T63iMwqLjhKsXSxzeexs0u8DpU2eF28XlY3Oj.Tr9fnkl4a3G
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.878367'
-  updated_at: '2013-09-30 16:21:07.878367'
+  created_at: '2013-09-30 16:44:59.181903'
+  updated_at: '2013-09-30 16:44:59.181903'
   deleted_at: 
   disabled_at: 
 users_074:
-  id: '30134'
+  id: '30843'
   name: user 73
   email: user_73@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$25gSwQnMEegFVWABqZ2Izu/chpVgozqsjkgtA80cqqo6vwUsp.Wjy
+  cohort_id: '1251'
+  password_digest: $2a$04$.sNWQ4a.lP1hf.onXbrtmeYBJzrVxh4HZ6cya1mPJS6gPL6fPECSy
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.906829'
-  updated_at: '2013-09-30 16:21:07.906829'
+  created_at: '2013-09-30 16:44:59.185537'
+  updated_at: '2013-09-30 16:44:59.185537'
   deleted_at: 
   disabled_at: 
 users_075:
-  id: '30135'
+  id: '30844'
   name: user 74
   email: user_74@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$uoAwe/3UA/KjRMvd3O4oOeV4OvvT22OaKMQKvpLFYd6lqwNZlyGaq
+  cohort_id: '1251'
+  password_digest: $2a$04$p118ap28wYWjNEG24K1pDuRo0LGNZLT9pQSMskR6qi3eMSHq5bmy.
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.910625'
-  updated_at: '2013-09-30 16:21:07.910625'
+  created_at: '2013-09-30 16:44:59.189126'
+  updated_at: '2013-09-30 16:44:59.189126'
   deleted_at: 
   disabled_at: 
 users_076:
-  id: '30136'
+  id: '30845'
   name: user 75
   email: user_75@example.com
-  cohort_id: '1219'
-  password_digest: $2a$04$Ru2.P7xMDaXPnTM2xIrLB.0yIgyMUcM2Q1eoA/QzfYZvuMr5xjbP.
+  cohort_id: '1251'
+  password_digest: $2a$04$iE4M1d65zQpbDqBJwZ7o8urbuYNGcdzmlvdU5pJCMRDv3GiRQWiu.
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.914532'
-  updated_at: '2013-09-30 16:21:07.914532'
+  created_at: '2013-09-30 16:44:59.192701'
+  updated_at: '2013-09-30 16:44:59.192701'
   deleted_at: 
   disabled_at: 
 users_077:
-  id: '30137'
+  id: '30846'
   name: user 76
   email: user_76@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$AIlxmtr01bn0LHFm0EliRevUHGpSajAS8f3lJyreHthuhDH7T.dHm
+  cohort_id: '1252'
+  password_digest: $2a$04$OVt/U55ZWy.EeH2QbhlS.usDpQAFT6GxeHdwi/9HoXVXlcjNF8.vm
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.925901'
-  updated_at: '2013-09-30 16:21:07.925901'
+  created_at: '2013-09-30 16:44:59.200425'
+  updated_at: '2013-09-30 16:44:59.200425'
   deleted_at: 
   disabled_at: 
 users_078:
-  id: '30138'
+  id: '30847'
   name: user 77
   email: user_77@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$I.gPDA3mmlebX1QvGbsjVeO1XfgNKOJgoDeE53c5uesqsRTOckLz6
+  cohort_id: '1252'
+  password_digest: $2a$04$RrcRBEkBy2U/LrTjRjdg8OB7XXgrUvQK0laU16oaxlwtFY2A2lpU.
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.930489'
-  updated_at: '2013-09-30 16:21:07.930489'
+  created_at: '2013-09-30 16:44:59.203997'
+  updated_at: '2013-09-30 16:44:59.203997'
   deleted_at: 
   disabled_at: 
 users_079:
-  id: '30139'
+  id: '30848'
   name: user 78
   email: user_78@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$VFgTNT0edMkQQDtl6vwpAeoCWMKJp9HFg6z42/s39c9742nxcm3JW
+  cohort_id: '1252'
+  password_digest: $2a$04$3/HKcl4ldXpUIqUwqFfQ4OT4tZ1HhDYRw3MmTHYx.Dd4VrcZhYWSK
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.93454'
-  updated_at: '2013-09-30 16:21:07.93454'
+  created_at: '2013-09-30 16:44:59.207506'
+  updated_at: '2013-09-30 16:44:59.207506'
   deleted_at: 
   disabled_at: 
 users_080:
-  id: '30140'
+  id: '30849'
   name: user 79
   email: user_79@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$3SimFh3sD.lLlZXb6rnmfem3H0XP1UZTw5RbCJVtw6m8NuxSpiQFG
+  cohort_id: '1252'
+  password_digest: $2a$04$5BGIhJV64FjQSlphJuE1iuu356xP5ELWMveELQCXdbJTOKPDkedZu
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.938349'
-  updated_at: '2013-09-30 16:21:07.938349'
+  created_at: '2013-09-30 16:44:59.211141'
+  updated_at: '2013-09-30 16:44:59.211141'
   deleted_at: 
   disabled_at: 
 users_081:
-  id: '30141'
+  id: '30850'
   name: user 80
   email: user_80@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$9NJ5XYlU52wx6iKi/7qwfu24U49OeL9fghjzNb/rPJmaY9BT/M5gu
+  cohort_id: '1252'
+  password_digest: $2a$04$X06ivSeE50GeKhj88VcvAOegJPewdhNNlgemwD2xwWPWYPhimlMWS
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.942054'
-  updated_at: '2013-09-30 16:21:07.942054'
+  created_at: '2013-09-30 16:44:59.216167'
+  updated_at: '2013-09-30 16:44:59.216167'
   deleted_at: 
   disabled_at: 
 users_082:
-  id: '30142'
+  id: '30851'
   name: user 81
   email: user_81@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$6s/NXcYRwB27IskaDSIZeOYSbHN.ry28fwWc/i5A9ElVaZcdLttce
+  cohort_id: '1252'
+  password_digest: $2a$04$/U2YKaWFM/8TnCTp.LaTT.jqyBCE5j9kEIu5T388J.9rTR74fgp4e
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.945849'
-  updated_at: '2013-09-30 16:21:07.945849'
+  created_at: '2013-09-30 16:44:59.22077'
+  updated_at: '2013-09-30 16:44:59.22077'
   deleted_at: 
   disabled_at: 
 users_083:
-  id: '30143'
+  id: '30852'
   name: user 82
   email: user_82@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$LlWRhDCsbZS0FycunginsOLKUWRoGdiRcljM/dqkUekV90rWcC8Yy
+  cohort_id: '1252'
+  password_digest: $2a$04$jSjB8x8hDTPFE.YSzm.0OejzJ3A5SlIBIisx/Of8gvl4V.YH4ytAu
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.949479'
-  updated_at: '2013-09-30 16:21:07.949479'
+  created_at: '2013-09-30 16:44:59.225026'
+  updated_at: '2013-09-30 16:44:59.225026'
   deleted_at: 
   disabled_at: 
 users_084:
-  id: '30144'
+  id: '30853'
   name: user 83
   email: user_83@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$HUjcWA72imOBM3A4WTQ6aO6AQvqZulW9FUySs6horCUejF3I8QtjG
+  cohort_id: '1252'
+  password_digest: $2a$04$.jnW9sxZ7wyoHpnGo0T2Hu5h9u903Z3wWs9RFORHeNkJ7d.Z0W2MK
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.953047'
-  updated_at: '2013-09-30 16:21:07.953047'
+  created_at: '2013-09-30 16:44:59.228673'
+  updated_at: '2013-09-30 16:44:59.228673'
   deleted_at: 
   disabled_at: 
 users_085:
-  id: '30145'
+  id: '30854'
   name: user 84
   email: user_84@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$Y4Mddmka0VXbRKG9CrgjEuQP76CylTnkrXq7REWrzM8r11ePacQx2
+  cohort_id: '1252'
+  password_digest: $2a$04$DwFyOrOVsl3wG6eMB1AE3OCEGOyTDa6RIrdE5N0I3M/87veDdoiJK
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.956911'
-  updated_at: '2013-09-30 16:21:07.956911'
+  created_at: '2013-09-30 16:44:59.232278'
+  updated_at: '2013-09-30 16:44:59.232278'
   deleted_at: 
   disabled_at: 
 users_086:
-  id: '30146'
+  id: '30855'
   name: user 85
   email: user_85@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$bZv0yITHXPJmqbdvkyWC..qiwvLbvhOR9kSJBtRmk1jHu0wwICYKK
+  cohort_id: '1252'
+  password_digest: $2a$04$rP4HaklpyFdx1U692wOkR.htUu41Fy7xCwtqStzAHkFXXeuPFjAOa
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.960738'
-  updated_at: '2013-09-30 16:21:07.960738'
+  created_at: '2013-09-30 16:44:59.236126'
+  updated_at: '2013-09-30 16:44:59.236126'
   deleted_at: 
   disabled_at: 
 users_087:
-  id: '30147'
+  id: '30856'
   name: user 86
   email: user_86@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$ig26rDPDtj.hD2M3wV687OHjtFatJW3FGyhPNZqyesq80/jbiFAwO
+  cohort_id: '1252'
+  password_digest: $2a$04$PExVK7QwX23yfAeebm8fh.GJ3TMJ3H02sQDZTPkRJJp8AjvjnVta6
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.964363'
-  updated_at: '2013-09-30 16:21:07.964363'
+  created_at: '2013-09-30 16:44:59.239646'
+  updated_at: '2013-09-30 16:44:59.239646'
   deleted_at: 
   disabled_at: 
 users_088:
-  id: '30148'
+  id: '30857'
   name: user 87
   email: user_87@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$n3mJ5y/dcw2uED3yrv.hrOShfo.pDpJOk1zKCzDjEX63x4G4YQp1q
+  cohort_id: '1252'
+  password_digest: $2a$04$wpgV5y8q2W.C/yL0KUyMOuezp00G0477U6HxQWDP2V.2Sb0PsNV7y
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.968042'
-  updated_at: '2013-09-30 16:21:07.968042'
+  created_at: '2013-09-30 16:44:59.243331'
+  updated_at: '2013-09-30 16:44:59.243331'
   deleted_at: 
   disabled_at: 
 users_089:
-  id: '30149'
+  id: '30858'
   name: user 88
   email: user_88@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$2hsjWI3U1wOJcReyu0bNouE.16xaU06NKEYnUBf0kKytijNEeDlwu
+  cohort_id: '1252'
+  password_digest: $2a$04$938A/uAjuOhWwiK.kjC4K.T3jp051lH8w2Thq53j5P96Jiw4EI1ri
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.97179'
-  updated_at: '2013-09-30 16:21:07.97179'
+  created_at: '2013-09-30 16:44:59.246926'
+  updated_at: '2013-09-30 16:44:59.246926'
   deleted_at: 
   disabled_at: 
 users_090:
-  id: '30150'
+  id: '30859'
   name: user 89
   email: user_89@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$PUr4/08ZQNbjbR8S0zGaMOjcpSvdpyBk6jRpfoOjuIt1VMhGlYNj6
+  cohort_id: '1252'
+  password_digest: $2a$04$.zQuZVKexWrmXKlzPocyAuztvk2bzzkDp7yJaWw439GMhWj9iTbVi
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.975469'
-  updated_at: '2013-09-30 16:21:07.975469'
+  created_at: '2013-09-30 16:44:59.250769'
+  updated_at: '2013-09-30 16:44:59.250769'
   deleted_at: 
   disabled_at: 
 users_091:
-  id: '30151'
+  id: '30860'
   name: user 90
   email: user_90@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$IO/G.s90h0VfVympz9ZxZeOBB5fn2riziUD.4DujQabM4x18VQ41q
+  cohort_id: '1252'
+  password_digest: $2a$04$OdgGAli69ecFcPdNm3P7CeMYfiL3z0HOV8CmzeVsl/vCHdZv5Y6HG
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.979073'
-  updated_at: '2013-09-30 16:21:07.979073'
+  created_at: '2013-09-30 16:44:59.254486'
+  updated_at: '2013-09-30 16:44:59.254486'
   deleted_at: 
   disabled_at: 
 users_092:
-  id: '30152'
+  id: '30861'
   name: user 91
   email: user_91@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$cz3sijzIJPpMGTD9GjfJgOa3Glg03HTF3STMT7Cd44ZNL9II1DCWi
+  cohort_id: '1252'
+  password_digest: $2a$04$vCnu5DpmQR8OtUYXxV39n.eJ4WKhmSCtizPz/5lSBu9op9e6.84My
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.982633'
-  updated_at: '2013-09-30 16:21:07.982633'
+  created_at: '2013-09-30 16:44:59.25807'
+  updated_at: '2013-09-30 16:44:59.25807'
   deleted_at: 
   disabled_at: 
 users_093:
-  id: '30153'
+  id: '30862'
   name: user 92
   email: user_92@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$ZOqeWq.0cv.uAueWkF.sbufl0KGtCpHelt61DsS8miaaK212Qu3i6
+  cohort_id: '1252'
+  password_digest: $2a$04$hvzoFvI3YGdgo8j40fVg0OdhCqK1LoFIuKcdYKdXWLuB8Bu7iRTya
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.986361'
-  updated_at: '2013-09-30 16:21:07.986361'
+  created_at: '2013-09-30 16:44:59.261714'
+  updated_at: '2013-09-30 16:44:59.261714'
   deleted_at: 
   disabled_at: 
 users_094:
-  id: '30154'
+  id: '30863'
   name: user 93
   email: user_93@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$LtkDKyImz6TPuLCAyjGZmOHY59c4ylM50sqXH19E7RknDCvj./K1q
+  cohort_id: '1252'
+  password_digest: $2a$04$5FYZXYPhYvfyOzCOGof77Oi.edAmIW4ofQDIe7qlHFjWRY/JQ.I1O
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.989868'
-  updated_at: '2013-09-30 16:21:07.989868'
+  created_at: '2013-09-30 16:44:59.265387'
+  updated_at: '2013-09-30 16:44:59.265387'
   deleted_at: 
   disabled_at: 
 users_095:
-  id: '30155'
+  id: '30864'
   name: user 94
   email: user_94@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$7rvJ0bzZ.DrkeKTqTUND4ONtiqtGOa1thrRLoLq.CIXVZypviGBKa
+  cohort_id: '1252'
+  password_digest: $2a$04$CrHScPCtsChxlBhU8G1Y.urLVqGRgdwhAz/paC7G.31UbIMofp35i
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.994708'
-  updated_at: '2013-09-30 16:21:07.994708'
+  created_at: '2013-09-30 16:44:59.26902'
+  updated_at: '2013-09-30 16:44:59.26902'
   deleted_at: 
   disabled_at: 
 users_096:
-  id: '30156'
+  id: '30865'
   name: user 95
   email: user_95@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$KnH/yZJzEre8PvgSOr/dpu8JbYmtLAYUan5ZvAxkGx/d5N/zWiAU6
+  cohort_id: '1252'
+  password_digest: $2a$04$jlNE4XnkPLzCNqVJwhpE0u/a8CeWWu6gkW6x24S5s2si4k5KVzYYK
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:07.999101'
-  updated_at: '2013-09-30 16:21:07.999101'
+  created_at: '2013-09-30 16:44:59.27296'
+  updated_at: '2013-09-30 16:44:59.27296'
   deleted_at: 
   disabled_at: 
 users_097:
-  id: '30157'
+  id: '30866'
   name: user 96
   email: user_96@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$pVuazb5CWlTvY.HQv20sbuvHP6W2c0qjYHPJB77OC3ryCfj3mXPTC
+  cohort_id: '1252'
+  password_digest: $2a$04$uvIA0geQG2yWTqsIOLr2b.4KwxA3yzqgnXvNSgCxQqOpzyJq4uHPu
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.002867'
-  updated_at: '2013-09-30 16:21:08.002867'
+  created_at: '2013-09-30 16:44:59.276704'
+  updated_at: '2013-09-30 16:44:59.276704'
   deleted_at: 
   disabled_at: 
 users_098:
-  id: '30158'
+  id: '30867'
   name: user 97
   email: user_97@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$gA0zHzBlG4Zj.3/ZirruM.kVYnBkc9gh4AgIFdEQX.G2EUdmnqV.q
+  cohort_id: '1252'
+  password_digest: $2a$04$h3S4/xm1znVAGkZhHIdz5ewqWpGIJq/F3IsUmpxfHmntjS/t6CJIK
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.006809'
-  updated_at: '2013-09-30 16:21:08.006809'
+  created_at: '2013-09-30 16:44:59.280163'
+  updated_at: '2013-09-30 16:44:59.280163'
   deleted_at: 
   disabled_at: 
 users_099:
-  id: '30159'
+  id: '30868'
   name: user 98
   email: user_98@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$w.qVU9c16uMcAcgteLgBeu7MwtQSHBZR5LcwlIF/stT.vOuFEeL8i
+  cohort_id: '1252'
+  password_digest: $2a$04$6ICDM.rbw7i9IoNQ2NGUFe1IMWes/tInrLunSp6iIfKp2hFrWEXWO
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.01069'
-  updated_at: '2013-09-30 16:21:08.01069'
+  created_at: '2013-09-30 16:44:59.283578'
+  updated_at: '2013-09-30 16:44:59.283578'
   deleted_at: 
   disabled_at: 
 users_100:
-  id: '30160'
+  id: '30869'
   name: user 99
   email: user_99@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$lUX4pAVIVpPGOSmysrP9mOo3W0M/lJf.WwLjT8JTo3W0luXJNcJ/y
+  cohort_id: '1252'
+  password_digest: $2a$04$jE15QmrlijtiBGW2d1UYS.84nRkNusXPGqJ5xg8MDqAX8491.j9fK
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.014219'
-  updated_at: '2013-09-30 16:21:08.014219'
+  created_at: '2013-09-30 16:44:59.288067'
+  updated_at: '2013-09-30 16:44:59.288067'
   deleted_at: 
   disabled_at: 
 users_101:
-  id: '30161'
+  id: '30870'
   name: user 100
   email: user_100@example.com
-  cohort_id: '1220'
-  password_digest: $2a$04$yePtcZCxNoaPlrz/Al4oleviuI9JCCTvLmkV9TI5FgZYwfS288Ety
+  cohort_id: '1252'
+  password_digest: $2a$04$N7Yxxv8vkm8YEMpeFaYBz.vLB.WhC5kYGr60qU115A7/LYj.Z0FLu
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.017912'
-  updated_at: '2013-09-30 16:21:08.017912'
+  created_at: '2013-09-30 16:44:59.292777'
+  updated_at: '2013-09-30 16:44:59.292777'
   deleted_at: 
   disabled_at: 
 users_102:
-  id: '30162'
+  id: '30871'
   name: user 101
   email: user_101@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$2ikJQXxcu.QzbSxjvDYCuO2GiTTgnDry7byep3coFGZfGjdUtTqb.
+  cohort_id: '1253'
+  password_digest: $2a$04$9S6E6BoQ.745.E7vfxnAzuoccPWvyzgLPlg4f8iMDGrmALkYiBQ22
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.026043'
-  updated_at: '2013-09-30 16:21:08.026043'
+  created_at: '2013-09-30 16:44:59.301586'
+  updated_at: '2013-09-30 16:44:59.301586'
   deleted_at: 
   disabled_at: 
 users_103:
-  id: '30163'
+  id: '30872'
   name: user 102
   email: user_102@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$nfcxbN/avnV0/tkVjqRTK.vDW3q8O0ELaZYx7vferKHxIy.hKAesK
+  cohort_id: '1253'
+  password_digest: $2a$04$BDaFUAK5rn1XY8zIc6muweoaLRVK1sC54FQFHglNx/JxBdflC6mNW
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.029776'
-  updated_at: '2013-09-30 16:21:08.029776'
+  created_at: '2013-09-30 16:44:59.305716'
+  updated_at: '2013-09-30 16:44:59.305716'
   deleted_at: 
   disabled_at: 
 users_104:
-  id: '30164'
+  id: '30873'
   name: user 103
   email: user_103@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$ocjX/8lsJEfVYG6OoVwQduDrqZdk6xBP7RMYTFyNC7Jsx36NagDuW
+  cohort_id: '1253'
+  password_digest: $2a$04$QOXMAoDqTaKK3HkJwbLKfe5nsiXCf2CTFdw/kCNp5p1rHWHCkXVdm
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.033449'
-  updated_at: '2013-09-30 16:21:08.033449'
+  created_at: '2013-09-30 16:44:59.309649'
+  updated_at: '2013-09-30 16:44:59.309649'
   deleted_at: 
   disabled_at: 
 users_105:
-  id: '30165'
+  id: '30874'
   name: user 104
   email: user_104@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$/Xn1rFS5xy8eGkxleSUs3OV/aDZ4QT3Dc8mbWMFIS/maAOrjPaMFu
+  cohort_id: '1253'
+  password_digest: $2a$04$03HvGHTBNi/K3rmaMw2JR.7Imjpn.qsm2/DV9W.pSa3QqvVzoNLcm
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.036981'
-  updated_at: '2013-09-30 16:21:08.036981'
+  created_at: '2013-09-30 16:44:59.338568'
+  updated_at: '2013-09-30 16:44:59.338568'
   deleted_at: 
   disabled_at: 
 users_106:
-  id: '30166'
+  id: '30875'
   name: user 105
   email: user_105@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$Joy378sT2iclfvUx1.KXMuWbLCzgYiCigJwFXn4LBqIdqIHxkztGi
+  cohort_id: '1253'
+  password_digest: $2a$04$bwtojAPBqveIgAkMYWUkaea5Gmtkjy.XAixRghlhdl52KGlVhLy9i
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.040903'
-  updated_at: '2013-09-30 16:21:08.040903'
+  created_at: '2013-09-30 16:44:59.345747'
+  updated_at: '2013-09-30 16:44:59.345747'
   deleted_at: 
   disabled_at: 
 users_107:
-  id: '30167'
+  id: '30876'
   name: user 106
   email: user_106@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$J8dI.vvVgnf4v4bCEW3x0.f8FhS2WDvXEC1w/geLL0PmNnsOX36Li
+  cohort_id: '1253'
+  password_digest: $2a$04$yoZPLaAlxdhMeazZcNqoRuEEvC4iZGTY0jm1EOYB8hMtEzhMk89Ty
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.044927'
-  updated_at: '2013-09-30 16:21:08.044927'
+  created_at: '2013-09-30 16:44:59.349852'
+  updated_at: '2013-09-30 16:44:59.349852'
   deleted_at: 
   disabled_at: 
 users_108:
-  id: '30168'
+  id: '30877'
   name: user 107
   email: user_107@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$M0BsmxPDJATaqAKRTSHwZOz3El/gM3vikl/BpLmV743oxGauPMTr2
+  cohort_id: '1253'
+  password_digest: $2a$04$NOSHd6ZnqxFnJOIG.GxfrerZDSBqNAgiZQTGR47q490wR.qys.ssa
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.04854'
-  updated_at: '2013-09-30 16:21:08.04854'
+  created_at: '2013-09-30 16:44:59.353897'
+  updated_at: '2013-09-30 16:44:59.353897'
   deleted_at: 
   disabled_at: 
 users_109:
-  id: '30169'
+  id: '30878'
   name: user 108
   email: user_108@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$HnIUVsAOc9aeO0EZnWFcL.QvwFYJJyYgMQkLe3HVkbRL6ybAyNNr6
+  cohort_id: '1253'
+  password_digest: $2a$04$4Iz2a95/8q9RAKL/F8LypOM2XqmBP2eLqsUoNFJHAjozntjrwgQTK
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.052263'
-  updated_at: '2013-09-30 16:21:08.052263'
+  created_at: '2013-09-30 16:44:59.357478'
+  updated_at: '2013-09-30 16:44:59.357478'
   deleted_at: 
   disabled_at: 
 users_110:
-  id: '30170'
+  id: '30879'
   name: user 109
   email: user_109@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$6XbiJEFHODQhdyOnfssf9uZf8K7jAOw7k7zCN8HRC5KiI7cmvaunC
+  cohort_id: '1253'
+  password_digest: $2a$04$oGDq2cpeoe1znty7h3diCeDW7gxQ9pxS2W9dhUdSM3lCk.cHrq8Vq
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.055797'
-  updated_at: '2013-09-30 16:21:08.055797'
+  created_at: '2013-09-30 16:44:59.360968'
+  updated_at: '2013-09-30 16:44:59.360968'
   deleted_at: 
   disabled_at: 
 users_111:
-  id: '30171'
+  id: '30880'
   name: user 110
   email: user_110@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$ek41oP6UzqL5ADf3JtlMWeAQpfDW4XZ1dJtiMpdBE14dkjC.TVj1i
+  cohort_id: '1253'
+  password_digest: $2a$04$xYS5zb4X3NzFLa8vBzLWEOCmThe9J95tBrVLmMjVbl9xvBaVhEWbW
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.05945'
-  updated_at: '2013-09-30 16:21:08.05945'
+  created_at: '2013-09-30 16:44:59.364525'
+  updated_at: '2013-09-30 16:44:59.364525'
   deleted_at: 
   disabled_at: 
 users_112:
-  id: '30172'
+  id: '30881'
   name: user 111
   email: user_111@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$z2QTpJLohweHYene0ENGR.hE0f.OmucVoiNDv4okbqwUDkkPuQ7B.
+  cohort_id: '1253'
+  password_digest: $2a$04$AoKekNNhJZH4Wth3lB6KoOClHDvew8ttKDQOk/KF9/RlRbEaAks5i
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.063198'
-  updated_at: '2013-09-30 16:21:08.063198'
+  created_at: '2013-09-30 16:44:59.368437'
+  updated_at: '2013-09-30 16:44:59.368437'
   deleted_at: 
   disabled_at: 
 users_113:
-  id: '30173'
+  id: '30882'
   name: user 112
   email: user_112@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$zd2dZDMDtEZpoZBAkFnwpe5FsQiAzSZIuR9gr6H8W2k9/jUMvHhMy
+  cohort_id: '1253'
+  password_digest: $2a$04$dUtOWInLyisWJtUwDO.B3uXpfx2CrydkZfPI0IxQPFbOoJdhkI5ie
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.066653'
-  updated_at: '2013-09-30 16:21:08.066653'
+  created_at: '2013-09-30 16:44:59.372106'
+  updated_at: '2013-09-30 16:44:59.372106'
   deleted_at: 
   disabled_at: 
 users_114:
-  id: '30174'
+  id: '30883'
   name: user 113
   email: user_113@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$DtY3h32q.fEbzHmPRzwbKeU7H4HD.xsakFcHn3s3Uz6lxbDeghQXW
+  cohort_id: '1253'
+  password_digest: $2a$04$jT6WfZ7JlYLw0Ex37rG4N.KV0nHkQdSpFl3tk/8E2MYi8D3NYlsyi
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.071589'
-  updated_at: '2013-09-30 16:21:08.071589'
+  created_at: '2013-09-30 16:44:59.375857'
+  updated_at: '2013-09-30 16:44:59.375857'
   deleted_at: 
   disabled_at: 
 users_115:
-  id: '30175'
+  id: '30884'
   name: user 114
   email: user_114@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$QF4NlvQ8rp5nn/DL40WnSOrfONAJxYJhRQwQ7oPxwYNM6rfpBmwXe
+  cohort_id: '1253'
+  password_digest: $2a$04$jTPP.hEiOWMDyCZIQ0WrPOxMUkDPFB2yk.NhA8KwQAaHPbUDkLJ9K
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.075329'
-  updated_at: '2013-09-30 16:21:08.075329'
+  created_at: '2013-09-30 16:44:59.379517'
+  updated_at: '2013-09-30 16:44:59.379517'
   deleted_at: 
   disabled_at: 
 users_116:
-  id: '30176'
+  id: '30885'
   name: user 115
   email: user_115@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$9qrgD1hz5YXzqpkCIDDcOuFQpJkdiCrtfZOJD0GdfxdDe/gjJjmW.
+  cohort_id: '1253'
+  password_digest: $2a$04$novV3GrWep5rUYM6TWLJhu4SmgSNaS.UEzezh1BPreoa80iXofy36
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.078915'
-  updated_at: '2013-09-30 16:21:08.078915'
+  created_at: '2013-09-30 16:44:59.383119'
+  updated_at: '2013-09-30 16:44:59.383119'
   deleted_at: 
   disabled_at: 
 users_117:
-  id: '30177'
+  id: '30886'
   name: user 116
   email: user_116@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$34V2RFfPIN67WT/lJDqoMOALv/tXBlnqhvJONb4Lk7sx6hMeeyPKC
+  cohort_id: '1253'
+  password_digest: $2a$04$mOCCkFC27NFlwf7Z87s/1.IiA1eiRHC2rCfS17u31sD2XfuU8ScxW
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.082756'
-  updated_at: '2013-09-30 16:21:08.082756'
+  created_at: '2013-09-30 16:44:59.386648'
+  updated_at: '2013-09-30 16:44:59.386648'
   deleted_at: 
   disabled_at: 
 users_118:
-  id: '30178'
+  id: '30887'
   name: user 117
   email: user_117@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$w9g4mYN3X4jEKsUQrtk.sO/03kHWTbmdE.DMetC3CDmNubhux4.f.
+  cohort_id: '1253'
+  password_digest: $2a$04$ohCie8yzUAdfQDcMV9nJz.ybldys7H21A1ulNWR1F516bIw/G/HYC
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.086258'
-  updated_at: '2013-09-30 16:21:08.086258'
+  created_at: '2013-09-30 16:44:59.39029'
+  updated_at: '2013-09-30 16:44:59.39029'
   deleted_at: 
   disabled_at: 
 users_119:
-  id: '30179'
+  id: '30888'
   name: user 118
   email: user_118@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$1DJZ6LYCDtZjTpS4PIIj0eo29sRN.g/exQXjBaiuhEWsIuDmmXlTy
+  cohort_id: '1253'
+  password_digest: $2a$04$CcVuWGcfzP9.J4jcmDSdTeBF6iaatm8qHoYAFLTIx2Cg/5zq9Hona
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.089928'
-  updated_at: '2013-09-30 16:21:08.089928'
+  created_at: '2013-09-30 16:44:59.393902'
+  updated_at: '2013-09-30 16:44:59.393902'
   deleted_at: 
   disabled_at: 
 users_120:
-  id: '30180'
+  id: '30889'
   name: user 119
   email: user_119@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$a2mYbW3mtWAYKdk7D0CRme.tCykGE.W.nedI.Sqw3SQp0kvQoQ.Ei
+  cohort_id: '1253'
+  password_digest: $2a$04$0.XHVf3UBd0L9sej0tAv6Ot2amPqjk7B5QJJDcSObxX8LkEWSKqiW
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.093652'
-  updated_at: '2013-09-30 16:21:08.093652'
+  created_at: '2013-09-30 16:44:59.397569'
+  updated_at: '2013-09-30 16:44:59.397569'
   deleted_at: 
   disabled_at: 
 users_121:
-  id: '30181'
+  id: '30890'
   name: user 120
   email: user_120@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$OuiBIHrXFY2Zngy9NSZgyu76MfUt5S9NsF.z5lV5pgc4lBwlA/XTq
+  cohort_id: '1253'
+  password_digest: $2a$04$SefgvYTk2Vr2UE09fJ46NOgp3OWbfEEAKEOaKdu24siin.OhAvi26
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.097438'
-  updated_at: '2013-09-30 16:21:08.097438'
+  created_at: '2013-09-30 16:44:59.401575'
+  updated_at: '2013-09-30 16:44:59.401575'
   deleted_at: 
   disabled_at: 
 users_122:
-  id: '30182'
+  id: '30891'
   name: user 121
   email: user_121@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$.PHqrs.d16jj1sRy.Wq/hOh8.Ct76MqCBaU9ykTSs5QhEJm0nPXY.
+  cohort_id: '1253'
+  password_digest: $2a$04$Hw6fjeIYJEyP/Ns/PQurB.8jaehiE6pnfYF6ZHljEVqvavRO618wO
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.1024'
-  updated_at: '2013-09-30 16:21:08.1024'
+  created_at: '2013-09-30 16:44:59.405548'
+  updated_at: '2013-09-30 16:44:59.405548'
   deleted_at: 
   disabled_at: 
 users_123:
-  id: '30183'
+  id: '30892'
   name: user 122
   email: user_122@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$tyE8o8mlEjATVcH73REjGugji4MaWjaB2p0s/s/3Z5.5ZT4dDYMgq
+  cohort_id: '1253'
+  password_digest: $2a$04$.JAc1h2wHthKxcaP9NDzGuKw7JHzXYjIV2wBxc0I2yzDnlBcJ2IhG
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.106581'
-  updated_at: '2013-09-30 16:21:08.106581'
+  created_at: '2013-09-30 16:44:59.409357'
+  updated_at: '2013-09-30 16:44:59.409357'
   deleted_at: 
   disabled_at: 
 users_124:
-  id: '30184'
+  id: '30893'
   name: user 123
   email: user_123@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$JWZ6YP4d82MOiEV/bqszRe0oyq.NsCdusHLYGI4/I6twG.5Nyqq4G
+  cohort_id: '1253'
+  password_digest: $2a$04$9HthXVM3EzoGd.GdjXNL0OTu8gQeVVKStr2t8gkKNf5Zn.Z1X2s/e
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.112008'
-  updated_at: '2013-09-30 16:21:08.112008'
+  created_at: '2013-09-30 16:44:59.413266'
+  updated_at: '2013-09-30 16:44:59.413266'
   deleted_at: 
   disabled_at: 
 users_125:
-  id: '30185'
+  id: '30894'
   name: user 124
   email: user_124@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$X3OLXt7/HZXXtzs0DssIJ.c8CvG1NWFg6GoYTU/f8dez6m.7cB.cK
+  cohort_id: '1253'
+  password_digest: $2a$04$SDhyNki5qd2XHJY.E1zIOe891CLX8wxt8DTrrPc4fe.41rIDZ3qwe
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.11642'
-  updated_at: '2013-09-30 16:21:08.11642'
+  created_at: '2013-09-30 16:44:59.41713'
+  updated_at: '2013-09-30 16:44:59.41713'
   deleted_at: 
   disabled_at: 
 users_126:
-  id: '30186'
+  id: '30895'
   name: user 125
   email: user_125@example.com
-  cohort_id: '1221'
-  password_digest: $2a$04$m7GJjysLI3II8SFVQzj4U.pz/4eA.UkmVWE8A18efm/iXMumHjDtC
+  cohort_id: '1253'
+  password_digest: $2a$04$3fdoLoIAu8nEhrJrVFyp1.DwDb9MgzxnXDT.XFwlw5R11BuI302Eq
   roles_mask: '1'
   github_token: 
-  created_at: '2013-09-30 16:21:08.120903'
-  updated_at: '2013-09-30 16:21:08.120903'
+  created_at: '2013-09-30 16:44:59.420923'
+  updated_at: '2013-09-30 16:44:59.420923'
   deleted_at: 
   disabled_at: 
 users_127:
-  id: '30187'
+  id: '30896'
   name: user 126
   email: user_126@example.com
   cohort_id: 
-  password_digest: $2a$04$/GrIAUTFJzQSaR.tUoq1uuLyioS7Guih5D/LHUT9PT7GIOYEKQQ72
+  password_digest: $2a$04$rcmxX9u3GNicBeBxan1Ka.uFkZ8sQ1xDuIiTb9.v0KR5LClLP17am
   roles_mask: '2'
   github_token: 
-  created_at: '2013-09-30 16:21:08.190983'
-  updated_at: '2013-09-30 16:21:08.190983'
+  created_at: '2013-09-30 16:44:59.500571'
+  updated_at: '2013-09-30 16:44:59.500571'
   deleted_at: 
   disabled_at: 

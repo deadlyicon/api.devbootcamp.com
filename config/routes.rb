@@ -8,6 +8,8 @@ ApiDevbootcampCom::Application.routes.draw do
       resources :challenge_attempts
     end
 
+    get 'cohorts/:id/members' => 'cohorts#members', as: 'cohort_members'
+
     resources :cohorts
 
     resources :challenges

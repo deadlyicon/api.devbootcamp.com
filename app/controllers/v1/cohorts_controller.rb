@@ -13,6 +13,10 @@ class V1::CohortsController < V1Controller
     render json: dbc.cohorts.show(cohort_id)
   end
 
+  def members
+    render json: dbc.cohorts.members(cohort_id)
+  end
+
   def update
     render json: dbc.cohorts.update(cohort_id, cohort_params)
   end

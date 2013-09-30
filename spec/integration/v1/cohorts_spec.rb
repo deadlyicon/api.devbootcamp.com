@@ -26,6 +26,10 @@ describe 'v1 cohorts' do
       expect( cohort["start_date"] ).to eq params["start_date"].to_date.as_json
       expect( cohort["visible"]    ).to eq true
 
+      get "/v1/cohorts/#{cohort["id"]}"
+      expect(response).to be_ok
+      expect(response.json).to eq cohort
+
       users = 5.times.map do |i|
         params = {
           "name"                  => "new usser #{i}",
@@ -41,7 +45,9 @@ describe 'v1 cohorts' do
         response.json
       end
 
-      # get "/v1/cohorts/#{cohort["id"]}"
+      get "/v1/cohorts/#{cohort["id"]}/members"
+      expect(response).to be_ok
+      expect(response.json).to eq users
 
     end
   end

@@ -31,6 +31,15 @@ class Dbc::Cohorts
     serialize cohort
   end
 
+  def members id
+    can! :show, :cohort, id: id
+    cohort = Dbc::Cohort.find(id)
+    cohort.members.map do |member|
+      can! :show, :user, id: member.id
+      dbc.users.serialize(member)
+    end
+  end
+
   def update id, attributes={}
     can! :update, :cohort, id: id
 
