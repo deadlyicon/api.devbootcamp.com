@@ -2,6 +2,8 @@ ApiDevbootcampCom::Application.routes.draw do
 
   namespace :v1, defaults: {format: :json}, except: [:new, :edit] do
 
+    get :me, controller: 'me', action: 'show', as: 'me'
+
     resources :users do
       resources :challenge_attempts
     end

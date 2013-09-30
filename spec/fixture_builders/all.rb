@@ -21,7 +21,7 @@ FixtureBuilder.build do
   end
 
 
-  user_ids = Dbc::User.select(:id).all.map(&:id)
+  user_ids = Dbc::User.select(:id).map(&:id)
 
   10.times do
     Dbc::UserGroup.for user_ids.sample(rand(3)+1)

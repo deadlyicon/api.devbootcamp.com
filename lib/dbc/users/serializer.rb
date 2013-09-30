@@ -14,7 +14,7 @@ class Dbc::Users::Serializer < Dbc::Serializer
       "updated_at"   => user.updated_at,
     }
 
-    data["errors"] = user.errors.as_json.stringify_keys if user.errors.present?
+    data["errors"] = user.errors.full_messages if user.errors.present?
 
     return data
 

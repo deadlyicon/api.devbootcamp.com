@@ -4,6 +4,8 @@ module Dbc::Dependant
     @dbc = dbc
   end
 
-  delegate :can?, :cannot?, :can!, :cannot!, to: :@dbc
+  attr_reader :dbc
+
+  delegate :can?, :cannot?, :can!, :cannot!, to: :dbc
 
 end

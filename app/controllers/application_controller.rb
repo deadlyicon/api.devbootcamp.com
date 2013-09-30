@@ -17,12 +17,22 @@ class ApplicationController < ActionController::Base
     render_unauthorize error="Unauthorized"
   end
 
-  def render_unauthorize error="Unauthorized"
-    render json: {status: 401, error: error}, status: 401
+  def render_error status, json={}
+    json[:status] = status
+    json[:errors] ||= []
+    render json: json, status: status
+  end
+
+  def render_bad_request json={errors: ["Bad Request"]}
+    render_error 400, json
+  end
+
+  def render_unauthorize json={errors: ["Unauthorized"]}
+    render_error 401, json
   end
 
   def render_exception exception
-    render json: {status: 500, error: exception.message}, status: 500
+    render_error 500, errors: [exception.message]
   end
 
 end

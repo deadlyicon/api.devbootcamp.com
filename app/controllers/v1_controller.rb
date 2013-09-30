@@ -1,5 +1,8 @@
 class V1Controller < ApplicationController
 
+  rescue_from Dbc::ValidationError,  with: :render_validation_error
+  rescue_from Dbc::PermissionsError, with: :render_permissions_error
+
   private
 
   attr_reader :dbc
@@ -24,5 +27,15 @@ class V1Controller < ApplicationController
     access_token = params[:access_token] || request.headers.env['HTTP_AUTHORIZATION']
     access_token if access_token.present? && access_token !~ /basic/i
   end
+
+
+  def render_validation_error error
+    render_bad_request errors: error.record["errors"]
+  end
+
+  def render_permissions_error error
+    render_unauthorize
+  end
+
 
 end
