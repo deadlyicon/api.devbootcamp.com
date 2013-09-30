@@ -5,7 +5,7 @@ class Dbc::Cohorts::Serializer < Dbc::Serializer
     data = {
       "id"          => cohort.id,
       "name"        => cohort.name,
-      "location_id" => cohort.location_id,
+      "location"    => cohort.location.name,
       "in_session"  => cohort.in_session,
       "start_date"  => cohort.start_date,
       "email"       => cohort.email,

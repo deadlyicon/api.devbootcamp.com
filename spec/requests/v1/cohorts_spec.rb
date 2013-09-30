@@ -9,7 +9,7 @@ describe '/v1/cohorts' do
     {
       "id"          => cohort.id.as_json,
       "name"        => cohort.name.as_json,
-      "location_id" => cohort.location_id.as_json,
+      "location"    => cohort.location.name.as_json,
       "in_session"  => cohort.in_session.as_json,
       "start_date"  => cohort.start_date.as_json,
       "email"       => cohort.email.as_json,
@@ -34,7 +34,7 @@ describe '/v1/cohorts' do
       it "should create a cohort and render it as json" do
         attributes = attributes_for('dbc/cohort').slice(
           :name,
-          :location_id,
+          :location,
           :in_session,
           :start_date,
           :email,

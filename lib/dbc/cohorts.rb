@@ -4,7 +4,7 @@ class Dbc::Cohorts
 
   MUTABLE_ATTRIBUTES = [
     :name,
-    :location_id,
+    :location,
     :in_session,
     :start_date,
     :email,

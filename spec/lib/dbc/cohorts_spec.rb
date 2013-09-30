@@ -21,7 +21,7 @@ describe Dbc::Cohorts do
       it "should create a new cohort and return it as json" do
         attributes = attributes_for('dbc/cohort').slice(
           :name,
-          :location_id,
+          :location,
           :in_session,
           :start_date,
           :email,

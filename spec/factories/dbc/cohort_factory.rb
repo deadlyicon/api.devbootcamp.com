@@ -2,7 +2,7 @@ factory 'dbc/cohort' do
 
   sequence(:name) {|i| "cohort #{i}"}
   slug            {|cohort| cohort.name.gsub(/\s+/,'_') }
-  location_id     { Dbc::Location.first!.id }
+  location        { Dbc::Location.first!.name }
   email           {|cohort| "#{cohort.slug}@example.com"}
   visible         true
   start_date      { Date.today.beginning_of_week }
