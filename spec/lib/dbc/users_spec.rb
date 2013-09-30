@@ -27,7 +27,7 @@ describe Dbc::Users do
   end
 
   describe "show" do
-    it "should return all the users as json" do
+    it "should return the given user as json" do
       expect(dbc.users.show(user.id)).to eq serialize(user)
     end
   end

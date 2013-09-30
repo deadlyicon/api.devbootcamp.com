@@ -170,14 +170,3 @@ describe '/v1/users' do
   end
 
 end
-
-  # v1_users GET    /v1/users(.:format)                                 v1/users#index {:format=>:json}
-  #          POST   /v1/users(.:format)                                 v1/users#create {:format=>:json}
-  #  v1_user GET    /v1/users/:id(.:format)                             v1/users#show {:format=>:json}
-  #          PATCH  /v1/users/:id(.:format)                             v1/users#update {:format=>:json}
-  #          PUT    /v1/users/:id(.:format)                             v1/users#update {:format=>:json}
-  #          DELETE /v1/users/:id(.:format)                             v1/users#destroy {:format=>:json}
-
-
-
-

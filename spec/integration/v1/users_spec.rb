@@ -97,9 +97,6 @@ describe 'v1 users' do
       expect(response).to be_a_bad_request
       expect(failure["errors"]).to eq ["Password confirmation doesn't match Password"]
 
-
-
-
     end
 
   end

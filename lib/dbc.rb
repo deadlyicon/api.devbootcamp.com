@@ -22,12 +22,16 @@ class Dbc
 
   attr_reader :user_group
 
+  def user_groups
+    @user_groups ||= UserGroups.new(self)
+  end
+
   def users
     @users ||= Users.new(self)
   end
 
-  def user_groups
-    @user_groups ||= UserGroups.new(self)
+  def cohorts
+    @cohorts ||= Cohorts.new(self)
   end
 
   delegate :roles, :can?, :cannot?, :can!, :cannot!, to: :user_group
@@ -47,8 +51,8 @@ class Dbc
   end
 
   class PermissionsError < StandardError
-    def initialize user_group, can, action, subject
-      super "users #{user_group.user_ids.inspect} with the roles #{user_group.roles.inspect} #{can} #{action} #{subject.inspect}"
+    def initialize user_group, can, action, subject, conditions
+      super "users #{user_group.user_ids.inspect} with the roles #{user_group.roles.inspect} #{can} #{action} #{subject.inspect} #{conditions.inspect}"
     end
   end
 

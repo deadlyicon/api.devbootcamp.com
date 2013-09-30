@@ -17,7 +17,7 @@ class Dbc::Ability
   end
 
   ACTIONS  = [:index, :create, :show, :update, :destroy]
-  SUBJECTS = [:users, :user]
+  SUBJECTS = [:users, :user, :cohorts, :cohort]
 
   UnknownAction     = Class.new(ArgumentError)
   UnknownSubject    = Class.new(ArgumentError)
@@ -51,15 +51,12 @@ class Dbc::Ability
       when :update
 
         case subject
-        when :users
-          return false
         when :user
           condition[:id].present? or raise MissingConditions, ":id condition is missing"
           return user_ids.include?(condition[:id])
-        else
-          return false
         end
 
+        return false
 
       when :destroy
         return false

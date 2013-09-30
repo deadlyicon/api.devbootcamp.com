@@ -38,14 +38,14 @@ class Dbc::UserGroup < ActiveRecord::Base
 
   delegate :can?, :cannot?, to: :ability
 
-  def can!(action, subject, *extra_args)
-    return if can? action, subject, *extra_args
-    raise Dbc::PermissionsError.new(self, :cannot, action, subject)
+  def can!(action, subject, conditions={})
+    return if can? action, subject, conditions
+    raise Dbc::PermissionsError.new(self, :cannot, action, subject, conditions)
   end
 
-  def cannot!(action, subject, *extra_args)
-    return if cannot? action, subject, *extra_args
-    raise Dbc::PermissionsError.new(self, :can, action, subject)
+  def cannot!(action, subject, conditions={})
+    return if cannot? action, subject, conditions
+    raise Dbc::PermissionsError.new(self, :can, action, subject, conditions)
   end
 
   private

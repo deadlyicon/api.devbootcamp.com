@@ -57,7 +57,7 @@ module DbcHelpers
     #
     def as_a *roles, &block
       context "as a user_group with the roles: #{roles.inspect}" do
-        become *roles
+        before{ become_a *roles }
         class_eval(&block)
       end
     end
