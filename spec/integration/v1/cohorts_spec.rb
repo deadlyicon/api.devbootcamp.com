@@ -1,21 +1,12 @@
 require 'spec_helper'
 
-describe 'v1 users' do
-
-  # let(:default_parameters){ {} }
-  # let(:default_headers_or_env){ {} }
-  # let(:default_headers){ default_headers_or_env }
-  # let(:default_env){ default_headers_or_env }
+describe 'v1 cohorts' do
 
   # %w{get post patch put delete head}.each do |method|
-  #   define_method method do |path, parameters = {}, headers_or_env = {}|
-  #     parameters = default_parameters.merge(parameters)
-  #     headers_or_env = default_headers_or_env.merge(headers_or_env)
-  #     super(path, parameters, headers_or_env)
-
-  #     json = JSON.parse(response.body) rescue nil
-
+  #   define_method method do |*args|
+  #     super(*args)
   #     if response.status >= 500
+  #       json = JSON.parse(response.body) rescue nil
   #       warn "RESPONSE FAILED"
   #       warn "#{request.method} #{request.url} #{request.params.inspect}"
   #       warn "status: #{response.status}"
@@ -33,9 +24,7 @@ describe 'v1 users' do
   let(:user_group){ Dbc::UserGroup.for users }
   let(:access_token){ user_group.access_token }
 
-  before{
-    default_parameters[:access_token] = access_token
-  }
+  before{ default_parameters[:access_token] = access_token }
 
   context "as two students" do
 
@@ -43,9 +32,7 @@ describe 'v1 users' do
 
     it "CRUD" do
 
-      get '/v1/me'
-      expect(response).to be_ok
-      me = response.json
+      me = get '/v1/me'
 
       expect( me["id"]                       ).to eq user_group.id
       expect( me["roles"]                    ).to eq user_group.roles
@@ -70,6 +57,8 @@ describe 'v1 users' do
 
 
       post '/v1/users', {
+      expect(response.status).to eq 401
+      failure = response.json
         user: {
           name:                  "Peter Miller",
           email:                 "peter.miller@gmail.com",
@@ -78,28 +67,32 @@ describe 'v1 users' do
           roles:                 ["student"],
         }
       }
+
       expect(response.status).to eq 401
-      expect(response.json["errors"]).to eq ["Unauthorized"]
+      expect(failure["errors"]).to eq ["Unauthorized"]
 
 
-      patch "/v1/users/1"
+      failure = patch "/v1/users/1"
+      binding.pry
       expect(response).to be_a_bad_request
-      expect(response.json["errors"]).to eq ["param not found: user"]
+      expect(failure["errors"]).to eq ["param not found: user"]
 
-      patch "/v1/users/1", user: {name: "steve"}
+      failure = patch "/v1/users/1", user: {name: "steve"}
       expect(response.status).to eq 401
-      expect(response.json["errors"]).to eq ["Unauthorized"]
+      expect(failure["errors"]).to eq ["Unauthorized"]
 
 
-      patch "/v1/users/#{me["users"][0]["id"]}", {
+      failure = patch "/v1/users/#{me["users"][0]["id"]}", {
         user: {
           password:              "poop",
           password_confirmation: "pooop",
         }
       }
       expect(response).to be_a_bad_request
-      expect(response.json["errors"]).to eq ["Password confirmation doesn't match Password"]
+      expect(failure["errors"]).to eq ["Password confirmation doesn't match Password"]
+
     end
+
   end
 
   context "as an admin" do
@@ -108,9 +101,7 @@ describe 'v1 users' do
 
     it "should" do
 
-      get '/v1/me'
-      expect(response).to be_ok
-      me = response.json
+      me = get '/v1/me'
 
       expect( me["id"]                       ).to eq user_group.id
       expect( me["roles"]                    ).to eq user_group.roles
@@ -125,7 +116,7 @@ describe 'v1 users' do
       expect( me["users"][0]["created_at"]   ).to eq users[0].created_at.as_json
       expect( me["users"][0]["updated_at"]   ).to eq users[0].updated_at.as_json
 
-      post '/v1/users', {
+      peter = post '/v1/users', {
         user: {
           name:                  "Peter Miller",
           email:                 "peter.miller@gmail.com",
@@ -134,35 +125,30 @@ describe 'v1 users' do
           roles:                 ["student"],
         }
       }
-      expect(response).to be_ok
-      peter = response.json
 
-      get "/v1/users/#{peter["id"]}"
-      expect(response).to be_ok
-      expect(response.json).to eq peter
+      expect( get "/v1/users/#{peter["id"]}" ).to eq peter
 
 
-      put "/v1/users/#{peter["id"]}", {
+      new_peter = put "/v1/users/#{peter["id"]}", {
         user: { email: "pete.miller@yahoo.com", }
       }
-      expect(response).to be_ok
-      new_peter = response.json
 
       expect( new_peter ).to eq peter.update(new_peter.slice("email", "updated_at"))
 
-      get "/v1/users/#{peter["id"]}"
-      expect(response).to be_ok
-      expect(response.json).to eq new_peter
+      expect( get "/v1/users/#{peter["id"]}" ).to eq new_peter
 
 
-      patch "/v1/users/#{peter["id"]}", {
+      errors = patch "/v1/users/#{peter["id"]}", {
         user: {
           password:              "poop",
           password_confirmation: "pooop",
         }
       }
       expect(response).to be_a_bad_request
-      expect(response.json["errors"]).to eq ["Password confirmation doesn't match Password"]
+      expect(errors["errors"]).to eq ["Password confirmation doesn't match Password"]
+
+
+      # binding.pry
     end
 
   end

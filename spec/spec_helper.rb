@@ -42,4 +42,8 @@ RSpec.configure do |config|
   config.include DbcHelpers#, :example_group => {
   #   :file_path => config.escaped_path(%w[spec lib dbc])
   # }
+
+  config.include RequestDefaults, :example_group => {
+    :file_path => config.escaped_path(%w[spec integration])
+  }
 end
