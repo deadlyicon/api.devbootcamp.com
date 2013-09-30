@@ -130,6 +130,45 @@ describe '/v1/users' do
     end
   end
 
+
+  describe "DELETE /v1/users/:id" do
+
+    as_an :admin do
+      it "should delete the user" do
+        delete "/v1/users/#{user.id}"
+        expect(response.status).to eq 200
+        expect(response.json).to eq(
+          "id"           => user.id,
+          "name"         => user.name.as_json,
+          "email"        => user.email.as_json,
+          "roles"        => user.roles.as_json,
+          "github_token" => user.github_token.as_json,
+          "created_at"   => user.created_at.as_json,
+          "updated_at"   => user.updated_at.as_json,
+        )
+        expect{ user.reload }.to raise_error ActiveRecord::RecordNotFound
+      end
+    end
+
+    as_a :student do
+      it "should render unauthorized" do
+        delete "/v1/users/#{user.id}"
+        expect(response.status).to eq 401
+        expect(response.json).to eq("errors"=>["Unauthorized"], "status"=>401)
+      end
+    end
+
+
+    as_an :editor do
+      it "should render unauthorized" do
+        delete "/v1/users/#{user.id}"
+        expect(response.status).to eq 401
+        expect(response.json).to eq("errors"=>["Unauthorized"], "status"=>401)
+      end
+    end
+
+  end
+
 end
 
   # v1_users GET    /v1/users(.:format)                                 v1/users#index {:format=>:json}
