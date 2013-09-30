@@ -108,7 +108,7 @@ describe '/v1/users' do
         put "v1/users/#{user.id}", "user" => updates
 
         expect(response.status).to eq 400
-        expect(response.json["errors"]).to eq("password_confirmation"=>["doesn't match Password"])
+        expect(response.json["errors"]).to eq ["Password confirmation doesn't match Password"]
       end
     end
 
@@ -125,7 +125,6 @@ describe '/v1/users' do
         put "v1/users/#{user.id}", "user" => updates
 
         expect(response.status).to eq 401
-        expect(response.body).to be_blank
       end
 
     end

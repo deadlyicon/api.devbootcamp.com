@@ -24,7 +24,7 @@ class V1::UsersController < V1Controller
   private
 
   def user_id
-    params[:id]
+    params[:id].to_i
   end
 
   def user_params

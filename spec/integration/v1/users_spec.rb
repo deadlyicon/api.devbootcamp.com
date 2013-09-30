@@ -81,7 +81,10 @@ describe 'v1 users' do
 
       failure = patch "/v1/users/1"
       expect(response).to be_a_bad_request
-      # expect(failure["errors"]).to eq ["param not found: user"]
+      expect(failure["errors"]).to eq ["param not found: user"]
+
+      failure = patch "/v1/users/1", user: {name: "steve"}
+      expect(response.status).to eq 401
       expect(failure["errors"]).to eq ["Unauthorized"]
 
 
@@ -96,7 +99,6 @@ describe 'v1 users' do
 
 
 
-      # binding.pry
 
     end
 
