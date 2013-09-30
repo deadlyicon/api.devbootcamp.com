@@ -5,7 +5,7 @@ class Dbc::UserGroups::Serializer < Dbc::Serializer
     # Permissions will go in here
 
     users = user_group.users.map do |user|
-      dbc.users.show(user)
+      dbc.users.serialize(user)
     end
 
     data = {

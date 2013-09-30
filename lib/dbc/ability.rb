@@ -17,13 +17,14 @@ class Dbc::Ability
   end
 
   ACTIONS  = [:index, :create, :show, :update, :destroy]
-  SUBJECTS = [:users, :user, :cohorts, :cohort]
+  SUBJECTS = [:users, :user, :cohorts, :cohort, :user_groups, :user_group]
 
   UnknownAction     = Class.new(ArgumentError)
   UnknownSubject    = Class.new(ArgumentError)
   MissingConditions = Class.new(ArgumentError)
 
   def can? action, subject, condition={}
+    action, subject = action.to_sym, subject.to_sym
     raise UnknownAction,  action  if  ACTIONS.exclude? action
     raise UnknownSubject, subject if SUBJECTS.exclude? subject
 

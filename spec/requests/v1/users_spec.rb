@@ -71,7 +71,6 @@ describe '/v1/users' do
         "password"              => "3x@#32wDS#3",
         "password_confirmation" => "3x@#32wDS#3",
         "roles"                 => ["student", "admin"],
-        "github_token"          => "0c04666ea0420350b7ddaeea03449aa1f71b82cf",
       }
 
       put "v1/users/#{user.id}", "user" => updates
@@ -85,7 +84,7 @@ describe '/v1/users' do
         "name"         => updates["name"].as_json,
         "email"        => updates["email"].as_json,
         "roles"        => updates["roles"].as_json,
-        "github_token" => updates["github_token"].as_json,
+        "github_token" => user.github_token.as_json,
         "created_at"   => user.created_at.as_json,
         "updated_at"   => user.updated_at.as_json,
       )
@@ -93,7 +92,6 @@ describe '/v1/users' do
       expect( user.name         ).to eq updates["name"].as_json
       expect( user.email        ).to eq updates["email"].as_json
       expect( user.roles        ).to eq updates["roles"].as_json
-      expect( user.github_token ).to eq updates["github_token"].as_json
 
       expect( user.authenticate(updates["password"]) ).to_not be_false
     end
