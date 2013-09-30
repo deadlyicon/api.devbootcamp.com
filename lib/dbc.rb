@@ -31,6 +31,9 @@ class Dbc
   end
 
   class PermissionsError < StandardError
+    def initialize user_group, can, action, subject
+      super "users #{user_group.user_ids.inspect} with the roles #{user_group.roles.inspect} #{can} #{action} #{subject.inspect}"
+    end
   end
 
 end

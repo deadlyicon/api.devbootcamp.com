@@ -7,51 +7,67 @@ describe Dbc::Ability do
   MODELS    = [Dbc::User]
 
   ROLES.each do |role|
-    let(role){
-      user = create_user_with_roles role
-      Dbc::UserGroup.new(users: [user])
-    }
+    let(role){ create_user_with_roles role }
   end
 
-  it "should work" do
+  def assert_ability! users, can, ability, subject
+    users = Array(users)
+    user_group = Dbc::UserGroup.new(users: users)
+    return if user_group.send("#{can}?", ability, subject)
+    knot = can == :cannot
+    raise "expected the users #{user_group.user_ids.inspect} "+
+      "with the roles #{user_group.roles.inspect} to "+
+      (knot ? 'not ' : '')+
+      "be able to #{ability} #{subject.inspect}"
+  end
 
-    # binding.pry
+  it "should work as expected" do
 
-    student .cannot! :create,  Dbc::User
-    student .can!    :read,    Dbc::User
-    student .cannot! :update,  Dbc::User
-    student .cannot! :destroy, Dbc::User
-    editor  .cannot! :create,  Dbc::User
-    editor  .can!    :read,    Dbc::User
-    editor  .cannot! :update,  Dbc::User
-    editor  .cannot! :destroy, Dbc::User
-    admin   .can!    :create,  Dbc::User
-    admin   .can!    :read,    Dbc::User
-    admin   .can!    :update,  Dbc::User
-
-    as_a :student do
-      dbc.cannot! :create,  Dbc::User
-      dbc.can!    :read,    Dbc::User
-      dbc.cannot! :update,  Dbc::User
-      dbc.cannot! :destroy, Dbc::User
-    end
-
-    as_a :editor do
-      dbc.cannot! :create,  Dbc::User
-      dbc.can!    :read,    Dbc::User
-      dbc.cannot! :update,  Dbc::User
-      dbc.cannot! :destroy, Dbc::User
-    end
-
-    as_an :admin do
-      dbc.can!    :create,  Dbc::User
-      dbc.can!    :read,    Dbc::User
-      dbc.can!    :update,  Dbc::User
-      dbc.can!    :destroy, Dbc::User
-    end
+    assert_ability! student, :cannot, :create,  Dbc::User
+    assert_ability! student, :can,    :read,    Dbc::User
+    assert_ability! student, :can,    :update,  Dbc::User
+    assert_ability! student, :cannot, :destroy, Dbc::User
+    assert_ability! editor,  :cannot, :create,  Dbc::User
+    assert_ability! editor,  :can,    :read,    Dbc::User
+    assert_ability! editor,  :can,    :update,  Dbc::User
+    assert_ability! editor,  :cannot, :destroy, Dbc::User
+    assert_ability! admin,   :can,    :create,  Dbc::User
+    assert_ability! admin,   :can,    :read,    Dbc::User
+    assert_ability! admin,   :can,    :update,  Dbc::User
 
 
-    # user = Dbc::User.student
+    assert_ability! student, :can,    :read,    student
+    assert_ability! student, :can,    :update,  student
+
+    assert_ability! editor,  :can,    :read,    student
+    assert_ability! editor,  :cannot, :update,  student
+
+    assert_ability! admin,   :can,    :read,    student
+    assert_ability! admin,   :can,    :update,  student
+
+
+    assert_ability! student, :can,    :read,    editor
+    assert_ability! student, :cannot, :update,  editor
+
+    assert_ability! editor,  :can,    :read,    editor
+    assert_ability! editor,  :can,    :update,  editor
+
+    assert_ability! admin,   :can,    :read,    editor
+    assert_ability! admin,   :can,    :update,  editor
+
+
+    assert_ability! student, :can,    :read,    admin
+    assert_ability! student, :cannot, :update,  admin
+
+    assert_ability! editor,  :can,    :read,    admin
+    assert_ability! editor,  :cannot, :update,  admin
+
+    assert_ability! admin,   :can,    :read,    admin
+    assert_ability! admin,   :can,    :update,  admin
+
+
+    assert_ability! [student,editor], :can, :read,   student
+    assert_ability! [student,editor], :can, :update, student
 
   end
 

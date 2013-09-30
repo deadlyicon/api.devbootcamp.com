@@ -7,6 +7,7 @@ class Dbc::Ability
       can :manage, :all
     else
       can :read, :all
+      can :update, Dbc::User, :id => user_group.user_ids
     end
 
 
