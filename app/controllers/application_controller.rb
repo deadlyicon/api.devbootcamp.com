@@ -6,6 +6,8 @@ class ApplicationController < ActionController::Base
   before_action :authenticate!
 
   rescue_from Exception, :with => :render_exception
+  rescue_from ActionController::ParameterMissing, :with => :render_parameter_missing
+  rescue_from ActiveRecord::RecordNotFound, :with => :render_record_not_found
 
   private
 
@@ -14,7 +16,7 @@ class ApplicationController < ActionController::Base
   end
 
   def authenticate!
-    render_unauthorize error="Unauthorized"
+    render_unauthorized error="Unauthorized"
   end
 
   def render_error status, json={}
@@ -27,12 +29,24 @@ class ApplicationController < ActionController::Base
     render_error 400, json
   end
 
-  def render_unauthorize json={errors: ["Unauthorized"]}
+  def render_unauthorized json={errors: ["Unauthorized"]}
     render_error 401, json
   end
 
+  def render_not_found json={errors: ["Not Found"]}
+    render_error 404, json
+  end
+
   def render_exception exception
-    render_error 500, errors: [exception.message]
+    render_error 500, errors: [exception.message], class: exception.class.to_s, backtrace: exception.backtrace
+  end
+
+  def render_parameter_missing error
+    render_bad_request errors: [error.message]
+  end
+
+  def render_record_not_found error
+    render_bad_request errors: [error.message]
   end
 
 end

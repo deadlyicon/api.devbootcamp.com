@@ -10,17 +10,17 @@ class V1Controller < ApplicationController
   def authenticate!
     if access_token.present?
       @dbc = Dbc.authenticate_via_access_token(access_token) and return
-      return render_unauthorize "Invalid Access Token"
+      return render_unauthorized "Invalid Access Token"
     end
 
     authenticate_with_http_basic do |email, password|
       if email.present? && password.present?
         @dbc = Dbc.authenticate_via_email_and_password(email, password) and return
-        return render_unauthorize "Invalid Username or Password"
+        return render_unauthorized "Invalid Username or Password"
       end
     end
 
-    render_unauthorize
+    render_unauthorized
   end
 
   def access_token
@@ -28,14 +28,14 @@ class V1Controller < ApplicationController
     access_token if access_token.present? && access_token !~ /basic/i
   end
 
-
   def render_validation_error error
     render_bad_request errors: error.record["errors"]
   end
 
   def render_permissions_error error
-    render_unauthorize
+    render_unauthorized
   end
 
+  delegate :can?, :cannot?, :can!, :cannot!, to: :dbc
 
 end

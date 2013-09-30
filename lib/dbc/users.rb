@@ -12,34 +12,36 @@ class Dbc::Users
   ]
 
   def all
+    can! :index, :users
     serialize Dbc::User.all
   end
 
   def create attributes={}
+    can! :create, :users
     sanatize_attributes(attributes)
     user = Dbc::User.create(attributes)
-
     return serialize(user) if user.errors.empty?
     raise Dbc::ValidationError, serialize(user)
   end
 
   def show id
-    serialize Dbc::User.find(id)
+    can! :show, :user, id: id
+    user = Dbc::User.find(id)
+    serialize user
   end
 
   def update id, attributes={}
+    can! :update, :user, id: id
+
     sanatize_attributes(attributes)
     user = Dbc::User.find(id)
-
-    can! :update, user
-    can! :change_password, user if attributes.has_key?(:password)
-
     user.update_attributes(attributes)
     return serialize(user) if user.errors.empty?
     raise Dbc::ValidationError, serialize(user)
   end
 
   def destroy id
+    can! :destroy, :user, id: id
     user = Dbc::User.find(id)
     user.destroy
     serialize user
