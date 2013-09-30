@@ -1,4 +1,4 @@
-class V1::UsersController < ApplicationController
+class V1::UsersController < V1Controller
 
   rescue_from Dbc::ValidationError,  with: :render_validation_error
   rescue_from Dbc::PermissionsError, with: :render_permissions_error

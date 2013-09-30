@@ -14,4 +14,8 @@ ApiDevbootcampCom::Application.routes.draw do
 
   end
 
+  not_found = ->(*){ [404, {"Content-Type" => "application/json; charset=utf-8"}, ['{"status":404,"error":"Not Found"}']] }
+  match '*path' => not_found, via: :all
+  root :to => not_found
+
 end
