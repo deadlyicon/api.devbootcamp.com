@@ -10,12 +10,12 @@ module DbcHelpers
     users.flatten!
     if users.empty?
       @dbc = nil
-      current_users = []
+      access_token = nil
     else
       @dbc = Dbc.new as: users
-      current_users = dbc.user_group.user_ids
+      access_token = @dbc.user_group.access_token
     end
-    ApplicationController.any_instance.stub(:current_user_ids).and_return(current_users)
+    V1Controller.any_instance.stub(:access_token).and_return(access_token)
   end
 
   def become_a *roles

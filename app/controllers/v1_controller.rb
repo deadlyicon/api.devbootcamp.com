@@ -5,9 +5,7 @@ class V1Controller < ApplicationController
   attr_reader :dbc
 
   def authenticate!
-    access_token = params[:access_token] || request.headers.env['HTTP_AUTHORIZATION']
-
-    if access_token.present? && access_token !~ /basic/i
+    if access_token.present?
       @dbc = Dbc.authenticate_via_access_token(access_token) and return
       return render_unauthorize "Invalid Access Token"
     end
@@ -20,6 +18,11 @@ class V1Controller < ApplicationController
     end
 
     render_unauthorize
+  end
+
+  def access_token
+    access_token = params[:access_token] || request.headers.env['HTTP_AUTHORIZATION']
+    access_token if access_token.present? && access_token !~ /basic/i
   end
 
 end
