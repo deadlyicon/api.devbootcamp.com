@@ -3,7 +3,7 @@ module DbcHelpers
   extend ActiveSupport::Concern
 
   def create_user_with_roles *roles
-    create('dbc/user', :roles => roles)
+    create('dbc/user', :roles => roles.flatten)
   end
 
   def become *users
@@ -29,7 +29,7 @@ module DbcHelpers
   end
 
   def as_a *roles, &block
-    as create_user_with_roles(roles), &block
+    as create_user_with_roles(*roles), &block
   end
   alias_method :as_an, :as_a
 

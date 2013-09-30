@@ -1,6 +1,7 @@
 class V1::UsersController < ApplicationController
 
-  rescue_from Dbc::ValidationError, with: :render_validation_error
+  rescue_from Dbc::ValidationError,  with: :render_validation_error
+  rescue_from Dbc::PermissionsError, with: :render_permissions_error
 
   def index
     render json: dbc.users.all
@@ -35,6 +36,10 @@ class V1::UsersController < ApplicationController
 
   def render_validation_error error
     render json: error.record, status: :bad_request
+  end
+
+  def render_permissions_error error
+    render nothing: true, status: 401
   end
 
 end

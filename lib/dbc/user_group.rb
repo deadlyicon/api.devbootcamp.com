@@ -39,12 +39,12 @@ class Dbc::UserGroup < ActiveRecord::Base
 
   def can!(action, subject, *extra_args)
     return if can? action, subject, *extra_args
-    raise Dbc::PermissionsError
+    raise Dbc::PermissionsError, "a user group with the roles #{roles.inspect} cannot #{action} #{subject.inspect}"
   end
 
   def cannot!(action, subject, *extra_args)
     return if cannot? action, subject, *extra_args
-    raise Dbc::PermissionsError
+    raise Dbc::PermissionsError, "a user group with the roles #{roles.inspect} can #{action} #{subject.inspect}"
   end
 
   private
