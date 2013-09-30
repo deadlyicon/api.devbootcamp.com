@@ -22,7 +22,7 @@ describe Dbc::Cohorts do
         attributes = attributes_for('dbc/cohort')
         cohort = nil
         expect{ cohort = cohorts.create(attributes) }.to change{ Dbc::Cohort.count }.by(1)
-        attributes.stringify_keys!
+        attributes = attributes.as_json
         expect( cohort.slice(*attributes.keys) ).to eq attributes
       end
     end
