@@ -131,35 +131,28 @@ describe '/v1/users' do
   #   end
   # end
 
-  def get_user_group user_group_name
-    case user_group_name
-    when "a single student"; [Dbc::User.student.first!]
-    end
-  end
+  USER_GROUPS = {
+    "a single student" => ->(*){ [Dbc::User.student.first!] },
+  }.freeze
 
-  def get_action action_name
-    case action_name
-    when 'GET /v1/users'
-      ->(*){ get '/v1/users' }
-    end
-  end
+  ACTIONS = {
+    'GET /v1/users' => ->(*){ get '/v1/users' },
+  }.freeze
 
-  def get_response response_name
-    case response_name
-    when "blank and unauthorize"; ->(*){
+  RESPONSES = {
+    "blank and unauthorize" => ->(*){
       expect(response.status).to eq 401
       expect(response.body).to be_blank
-    }
-    when "all the dbc users as json"; ->(*){
+    },
+    "all the dbc users as json" => ->(*){
       expect(response.status).to eq 200
       expect( response.json ).to eq JSON.parse(dbc.users.all.to_json)
     }
-    end
-  end
+  }.freeze
 
   def self.given_i_am_authorized_as user_group_name, &block
     context "given I am authorized as #{user_group_name}" do
-      let(:current_users){ get_user_group(user_group_name) }
+      let(:current_users){ instance_eval &USER_GROUPS[user_group_name] }
       before{ become current_users }
       class_eval &block
     end
@@ -167,14 +160,14 @@ describe '/v1/users' do
 
   def self.when_i action_name, &block
     context "when I #{action_name}" do
-      before{ instance_eval &get_action(action_name) }
+      before{ instance_eval &ACTIONS[action_name] }
       class_eval &block
     end
   end
 
   def self.the_response_should_be response_name
     it "the response should be #{response_name}" do
-      instance_eval &get_response(response_name)
+      instance_eval &RESPONSES[response_name]
     end
   end
 
