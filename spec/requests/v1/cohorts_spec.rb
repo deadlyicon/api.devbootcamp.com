@@ -15,6 +15,8 @@ describe '/v1/cohorts' do
       "email"       => cohort.email.as_json,
       "visible"     => cohort.visible.as_json,
       "slug"        => cohort.slug.as_json,
+      "created_at"  => cohort.created_at.as_json,
+      "updated_at"  => cohort.updated_at.as_json,
     }
   end
 

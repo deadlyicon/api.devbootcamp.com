@@ -19,11 +19,19 @@ describe Dbc::Cohorts do
 
     describe "create" do
       it "should create a new cohort and return it as json" do
-        attributes = attributes_for('dbc/cohort')
-        cohort = nil
-        expect{ cohort = cohorts.create(attributes) }.to change{ Dbc::Cohort.count }.by(1)
-        attributes = attributes.as_json
-        expect( cohort.slice(*attributes.keys) ).to eq attributes
+        attributes = attributes_for('dbc/cohort').slice(
+          :name,
+          :location_id,
+          :in_session,
+          :start_date,
+          :email,
+          :visible,
+          :slug,
+        ).stringify_keys
+
+        cohort_json = nil
+        expect{ cohort_json = cohorts.create(attributes.dup) }.to change{ Dbc::Cohort.count }.by(1)
+        expect( cohort_json.slice(*attributes.keys) ).to eq attributes
       end
     end
 
