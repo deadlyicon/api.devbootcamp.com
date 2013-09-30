@@ -7,6 +7,8 @@ class ApplicationController < ActionController::Base
 
   private
 
+  attr_reader :dbc
+
   def force_request_formats_to_json!
     request.env["action_dispatch.request.formats"] = [Mime[:json]]
   end
@@ -32,8 +34,5 @@ class ApplicationController < ActionController::Base
   def render_unauthorize error="Unauthorized"
     render json: {status: 401, error: error}, status: 401
   end
-
-  attr_reader :dbc
-
 
 end
