@@ -20,6 +20,9 @@ FixtureBuilder.build do
     25.times{ create 'dbc/user', student: true, cohort: cohort }
   end
 
+
+  create 'dbc/user', editor: true
+
   # binding.pry
 
 end

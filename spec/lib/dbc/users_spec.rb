@@ -2,8 +2,9 @@ require 'spec_helper'
 
 describe Dbc::Users do
 
-  let(:current_user_ids){ [Dbc::User.admin.first!.id] }
-  before{ stub_current_user_ids }
+  let(:dbc){ Dbc.as Dbc::User.admin.first! }
+
+  # before{ stub_current_user_ids [Dbc::User.admin.first!.id] }
 
   let!(:user){ create('dbc/user') }
   let(:user_as_json){ Dbc::User::Serializer.new(dbc).call user }

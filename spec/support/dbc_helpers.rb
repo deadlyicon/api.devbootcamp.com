@@ -6,25 +6,14 @@ module DbcHelpers
     create('dbc/user', :roles => roles)
   end
 
-  # become :student
-  # become :student, :admin
-  # become user1, user2
-  # become user_group
-  # become user_group, user
-  # become user_group, user, :admin
-  def become *objects
-    user_ids = objects.map do |object|
-      next object.id                         if object.is_a? Dbc::User
-      next object.user_ids                   if object.is_a? Dbc::UserGroup
-      next create_user_with_roles(object).id if object.is_a? Symbol
-      raise ArgumentError, "unexpected object #{object.inspect}"
-    end
-    stub_current_user_ids(user_ids)
+  def become *users
+    @dbc = Dbc.new as: users
+    ApplicationController.any_instance.stub(:current_user_ids).
+      and_return(dbc.current_user_group.user_ids)
   end
 
-  def stub_current_user_ids current_user_ids
-    @dbc = Dbc.new as: current_user_ids
-    ApplicationController.any_instance.stub(:current_user_ids).and_return(current_user_ids)
+  def become_a *roles
+    become create_user_with_roles(roles)
   end
 
   def current_users
@@ -36,15 +25,21 @@ module DbcHelpers
     become *users
     yield
   ensure
-    stub_current_user_ids(original_user_ids) if original_user_ids
+    become *original_user_ids if original_user_ids
   end
-  alias_method :as_an, :as
-  alias_method :as_a, :as
+
+  def as_a *roles, &block
+    as create_user_with_roles(roles), &block
+  end
+  alias_method :as_an, :as_a
 
   attr_reader :dbc
 
   module ClassMethods
 
+    def become *roles
+      before{ become *roles }
+    end
 
     # as_a :student do
     #   …
@@ -56,7 +51,7 @@ module DbcHelpers
     #
     def as_a *roles, &block
       context "as a user_group with the roles: #{roles.inspect}" do
-        before{ become *roles }
+        become *roles
         class_eval(&block)
       end
     end

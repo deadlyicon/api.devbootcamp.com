@@ -7,7 +7,7 @@ describe '/v1/users' do
   let(:current_user){ Dbc::User.admin.first! }
 
   before do
-    stub_current_user_ids [current_user.id]
+    become current_user
   end
 
   describe 'GET /v1/users' do
@@ -115,10 +115,6 @@ describe '/v1/users' do
     context "when you don't have perission to change the password" do
 
       let(:current_user){ Dbc::User.student.first! }
-
-      before do
-        stub_current_user_ids [Dbc::User.admin.first!.id]
-      end
 
       it "it should fail" do
         updates = {

@@ -14,7 +14,7 @@ class Dbc
     @users ||= Users.new(self)
   end
 
-  delegate :can?, :cannot?, :can!, :cannot!, to: :current_user_group
+  delegate :roles, :can?, :cannot?, :can!, :cannot!, to: :current_user_group
 
   class InvalidUserGroup < StandardError
     def initialize(record)
