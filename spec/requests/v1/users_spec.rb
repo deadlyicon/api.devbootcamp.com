@@ -132,6 +132,7 @@ describe '/v1/users' do
   # end
 
   USER_GROUPS = {
+    "no one" => ->(*){ [] },
     "a single student" => ->(*){ [Dbc::User.student.first!] },
   }.freeze
 
@@ -175,6 +176,12 @@ describe '/v1/users' do
 
 
   given_i_am_authorized_as "a single student" do
+    when_i 'GET /v1/users' do
+      the_response_should_be "all the dbc users as json"
+    end
+  end
+
+  given_i_am_authorized_as "no one" do
     when_i 'GET /v1/users' do
       the_response_should_be "all the dbc users as json"
     end
